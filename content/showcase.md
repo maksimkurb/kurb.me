@@ -1,7 +1,6 @@
 ---
-title: "Showcase"
-date: "2018-07-18"
-author: "Hello Robot"
+title: "Мои работы"
+author: "maksimkurb"
 ---
 
 ## Header 2

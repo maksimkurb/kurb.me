@@ -9,37 +9,65 @@ copyright: Maxim Kurbatov
 params:
   # dir name of your blog content (default is `content/posts`)
   contentTypeName: posts
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor: red
+  # ["orange", "blue", "red", "green", "pink", "cubly"]
+  themeColor: cubly
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems: 3
+  showMenuItems: 4
   # show selector to switch language
   showLanguageSelector: false
   # set theme to full screen width
   fullWidthTheme: false
   # center theme with default width
-  centerTheme: false
+  centerTheme: true
 
 languages:
   ru:
     languageName: Русский
-    title: Your site title
-    subtitle: Your site subtitle
+    title: "@maksimkurb"
+    subtitle: Персональный сайт Максима Курбатова
     keywords: ''
-    menuMore: Show more
-    readMore: Read more
-    readOtherPosts: Read other posts
+    menuMore: Ссылки
+    readMore: Читать далее
+    readOtherPosts: Читать другие публикации
 
     params:
       logo:
-        logoText: Terminal
+        logoText: Cubly
         logoHomeLink: /
 
     menu:
       main:
+      - identifier: posts
+        name: Публикации
+        url: /posts
+        weight: 1
+
       - identifier: about
-        name: About
+        name: Обо мне
         url: /about
+        weight: 2
+
       - identifier: showcase
-        name: Showcase
+        name: Мои работы
         url: /showcase
+        weight: 3
+
+      - identifier: resume
+        name: Резюме
+        url: /resume
+        weight: 4
+
+      - identifier: rss
+        name: RSS
+        url: /posts/index.xml
+        weight: 5
+
+      - identifier: github
+        name: GitHub
+        url: https://github.com/maksimkurb/
+        weight: 6
+
+      - identifier: telegram
+        name: Telegram
+        url: https://t.me/maksimkurb
+        weight: 7
