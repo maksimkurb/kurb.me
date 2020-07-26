@@ -34,9 +34,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install theme dependencies
-        run:
-          shell: yarn
-          working-directory: themes/terminal
+        run: yarn add -D @babel/core @babel/cli postcss-cli && cd themes/terminal && yarn
 
       - name: Build
         run: hugo --minify
