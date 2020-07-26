@@ -1,5 +1,5 @@
-baseUrl: /
-languageCode: ru
+baseUrl: https://cubly.ru/
+languageCode: ru-ru
 defaultContentLanguage: ru
 theme: terminal
 paginate: 5
