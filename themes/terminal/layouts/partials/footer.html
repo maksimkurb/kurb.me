@@ -2,18 +2,23 @@
   <div class="footer__inner">
     {{ if $.Site.Copyright }}
       <div class="copyright copyright--user">
-        <span>{{ $.Site.Copyright | safeHTML }}</span>
+        <span>© {{ now.Year }} {{ $.Site.Copyright | safeHTML }}</span>
     {{else}}
       <div class="copyright">
         <span>© {{ now.Year }} Powered by <a href="http://gohugo.io">Hugo</a></span>
     {{end}}
-        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+        <span>:: theme by <a href="https://twitter.com/panr">panr</a></span>
       </div>
   </div>
 </footer>
 
-<script src="{{ "assets/main.js" | absURL }}"></script>
-<script src="{{ "assets/prism.js" | absURL }}"></script>
+{{ $js := resources.Get "js/main.js" | js.Build }}
+{{ $js := resources.Get "js/prism.js" | js.Build }}
+{{ $opts := dict "noComments" true "minified" true "compact" true }}
+{{ $menu := resources.Get "js/menu.js" | js.Build | babel $opts }}
+{{ $prism := resources.Get "js/prism.js" | js.Build | babel $opts }}
+<script src="{{ $menu.Permalink }}"></script>
+<script src="{{ $prism.Permalink }}"></script>
 
 <!-- Extended footer section-->
 {{ partial "extended_footer.html" . }}

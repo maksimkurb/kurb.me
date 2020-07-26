@@ -18,7 +18,25 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.74.3'
-          # extended: true
+          extended: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install theme dependencies
+        run:
+          shell: yarn
+          working-directory: themes/terminal
 
       - name: Build
         run: hugo --minify

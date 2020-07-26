@@ -4,6 +4,8 @@ defaultContentLanguage: ru
 theme: terminal
 paginate: 5
 
+copyright: Maxim Kurbatov
+
 params:
   # dir name of your blog content (default is `content/posts`)
   contentTypeName: posts
