@@ -158,20 +158,27 @@
 
     .spacer {
       flex-grow: 1;
+      background: var(--background);
     }
 
     .language-selector {
       position: relative;
       list-style: none;
       margin: 0;
+      color: white;
 
       &-current {
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        color: var(--accent);
         cursor: pointer;
         margin: 0;
+        padding: 0 4px;
+        background: var(--background);
+
+        &:hover {
+          background: transparent;
+        }
       }
 
       &__more {

@@ -7,17 +7,19 @@
         {{ end }}
       {{ end }}
       {{ if gt (len $.Site.Menus.main) $.Site.Params.showMenuItems }}
-        <ul class="menu__sub-inner">
-          <li class="menu__sub-inner-more-trigger"><a href="#">{{ $.Site.Params.MenuMore }} ▾</a></li>
+        <li>
+          <ul class="menu__sub-inner">
+            <li class="menu__sub-inner-more-trigger"><a href="#">{{ $.Site.Params.MenuMore }} ▾</a></li>
 
-          <ul class="menu__sub-inner-more hidden">
-            {{ range last (sub (len $.Site.Menus.main) $.Site.Params.showMenuItems) $.Site.Menus.main }}
-              {{ if not .HasChildren }}
-                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            <ul class="menu__sub-inner-more hidden">
+              {{ range last (sub (len $.Site.Menus.main) $.Site.Params.showMenuItems) $.Site.Menus.main }}
+                {{ if not .HasChildren }}
+                  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
               {{ end }}
-            {{ end }}
+            </ul>
           </ul>
-        </ul>
+        </li>
       {{ end }}
     {{ else }}
       {{ range $.Site.Menus.main }}
@@ -39,9 +41,9 @@
         {{ end }}
       </ul>
     </ul>
-    {{ end }}
-
+    {{ else }}
     <li class="placeholder"></li>
+    {{ end }}
   </ul>
 
   <ul class="menu__inner menu__inner--mobile">

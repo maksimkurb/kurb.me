@@ -5,6 +5,10 @@ theme: terminal
 paginate: 5
 
 copyright: Maxim Kurbatov
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 params:
   # dir name of your blog content (default is `content/posts`)
@@ -12,7 +16,7 @@ params:
   # ["orange", "blue", "red", "green", "pink", "cubly"]
   themeColor: cubly
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems: 4
+  showMenuItems: 2
   # show selector to switch language
   showLanguageSelector: false
   # set theme to full screen width
@@ -22,7 +26,7 @@ params:
 
 languages:
   ru:
-    languageName: Русский
+    languageName: ru
     title: "@maksimkurb"
     subtitle: Персональный сайт Максима Курбатова
     keywords: ''
@@ -42,19 +46,70 @@ languages:
         url: /posts
         weight: 1
 
-      - identifier: about
-        name: Обо мне
-        url: /about
-        weight: 2
+      #- identifier: about
+      #  name: Обо мне
+      #  url: /about
+      #  weight: 2
 
-      - identifier: showcase
-        name: Мои работы
-        url: /showcase
-        weight: 3
+      #- identifier: showcase
+      #  name: Мои работы
+      #  url: /showcase
+      #  weight: 3
 
-      - identifier: resume
+      - identifier: cv
         name: Резюме
-        url: /resume
+        url: /work
+        weight: 4
+
+      - identifier: rss
+        name: RSS
+        url: /posts/index.xml
+        weight: 5
+
+      - identifier: github
+        name: GitHub
+        url: https://github.com/maksimkurb/
+        weight: 6
+
+      - identifier: telegram
+        name: Telegram
+        url: https://t.me/maksimkurb
+        weight: 7
+  en:
+    languageName: en
+    title: "@maksimkurb"
+    subtitle: Maxim Kurbatov's page
+    keywords: ''
+    menuMore: More
+    readMore: Read more
+    readOtherPosts: Read other posts
+
+    params:
+      logo:
+        logoText: Cubly
+        logoHomeLink: /
+
+
+    menu:
+      main:
+      - identifier: posts
+        name: Posts
+        url: /posts
+        weight: 1
+
+      #- identifier: about
+      #  name: About me
+      #  url: /about
+      #  weight: 2
+
+      #- identifier: showcase
+      #  name: Showcase
+      #  url: /showcase
+      #  weight: 3
+
+      - identifier: cv
+        name: CV
+        url: /work
         weight: 4
 
       - identifier: rss

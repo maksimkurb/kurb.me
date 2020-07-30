@@ -14,10 +14,13 @@
 
 {{ $js := resources.Get "js/main.js" | js.Build }}
 {{ $js := resources.Get "js/prism.js" | js.Build }}
+{{ $js := resources.Get "js/languageSelector.js" | js.Build }}
 {{ $opts := dict "noComments" true "minified" true "compact" true }}
 {{ $menu := resources.Get "js/menu.js" | js.Build | babel $opts }}
+{{ $languageSelector := resources.Get "js/languageSelector.js" | js.Build | babel $opts }}
 {{ $prism := resources.Get "js/prism.js" | js.Build | babel $opts }}
 <script src="{{ $menu.Permalink }}"></script>
+<script src="{{ $languageSelector.Permalink }}"></script>
 <script src="{{ $prism.Permalink }}"></script>
 
 <!-- Extended footer section-->

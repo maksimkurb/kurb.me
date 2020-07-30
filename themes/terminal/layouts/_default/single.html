@@ -11,6 +11,15 @@
     {{ with .Params.Author }}
     <span class="post-author">:: {{ . }}</span>
     {{ end }}
+
+    <div class="post-languages">
+      {{ if .IsTranslated }}
+        {{ i18n "post-languages" }}:
+        [{{ range .Translations }}
+          <a href="{{ .RelPermalink }}">{{ default .Lang .Language.LanguageName }}</a>
+        {{ end }}]
+      {{ end }}
+    </div>
   </div>
 
   {{ if .Params.tags }}
