@@ -4,6 +4,8 @@ defaultContentLanguage: ru
 theme: terminal
 paginate: 5
 
+googleAnalytics: UA-44581121-8
+
 copyright: Maxim Kurbatov
 markup:
   goldmark:
