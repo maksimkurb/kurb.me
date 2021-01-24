@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1"
+  }
+}
