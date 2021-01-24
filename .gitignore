@@ -16,6 +16,7 @@ vendor/*/
 *.bench
 *.debug
 coverage*.out
+node_modules
 
 dock.sh
 
