@@ -1,2 +1,5 @@
 post-languages:
-  other: Перевод
+  one: Перевод
+  other: Переводы
+menu:
+  other: меню

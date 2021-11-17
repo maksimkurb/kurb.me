@@ -1,5 +1,5 @@
 ---
-title: "Резюме"
+title: "Резюме (CV)"
 ---
 
 # Maxim Kurbatov

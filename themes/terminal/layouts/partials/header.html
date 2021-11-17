@@ -3,7 +3,9 @@
     <div class="header__logo">
       {{ partial "logo.html" . }}
     </div>
-    <div class="menu-trigger">меню</div>
+    {{ if len $.Site.Menus }}
+      <div class="menu-trigger">{{ i18n "menu" }}</div>
+    {{ end }}
   </div>
   {{ if len $.Site.Menus }}
     {{ partial "menu.html" . }}
