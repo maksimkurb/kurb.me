@@ -32,7 +32,7 @@
 
     &:after {
       content: '';
-      background: repeating-linear-gradient(90deg, transparent, transparent 2px, var(--background) 0, var(--background) 10px);
+      background: var(--background-strips);
       display: block;
       width: 100%;
       right: 10px;
@@ -57,6 +57,11 @@
       right: 0;
     }
 
+    .placeholder {
+      flex-grow: 1;
+      background: var(--background);
+    }
+
     &__inner {
       display: flex;
       flex-wrap: wrap;
@@ -79,7 +84,7 @@
         }
       }
 
-      &>li:after {
+      &>li:not(:last-child):after {
         content: "";
         position: absolute;
         display: block;

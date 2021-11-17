@@ -18,7 +18,7 @@ params:
   # ["orange", "blue", "red", "green", "pink", "cubly"]
   themeColor: cubly
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems: 2
+  showMenuItems: 7
   # show selector to switch language
   showLanguageSelector: true
   # set theme to full screen width
@@ -38,7 +38,7 @@ languages:
 
     params:
       logo:
-        logoText: Cubly
+        logoText: "@maksimkurb"
         logoHomeLink: /
 
     menu:
@@ -63,20 +63,21 @@ languages:
         url: /cv
         weight: 4
 
-      - identifier: rss
-        name: RSS
-        url: /posts/index.xml
-        weight: 5
-
       - identifier: github
         name: GitHub
         url: https://github.com/maksimkurb/
-        weight: 6
+        weight: 5
 
       - identifier: telegram
         name: Telegram
         url: https://t.me/maksimkurb
+        weight: 6
+
+      - identifier: linkedin
+        name: LinkedIn
+        url: https://www.linkedin.com/in/maxim-kurbatov/
         weight: 7
+
   en:
     languageName: en
     title: "@maksimkurb"
@@ -114,17 +115,17 @@ languages:
         url: /cv
         weight: 4
 
-      - identifier: rss
-        name: RSS
-        url: /posts/index.xml
-        weight: 5
-
       - identifier: github
         name: GitHub
         url: https://github.com/maksimkurb/
-        weight: 6
+        weight: 5
 
       - identifier: telegram
         name: Telegram
         url: https://t.me/maksimkurb
+        weight: 6
+
+      - identifier: linkedin
+        name: LinkedIn
+        url: https://www.linkedin.com/in/maxim-kurbatov/
         weight: 7
