@@ -3,6 +3,7 @@ languageCode: ru-ru
 defaultContentLanguage: ru
 theme: terminal
 paginate: 5
+relativeURLs: true
 
 googleAnalytics: UA-44581121-8
 
