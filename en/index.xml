@@ -1,3 +1,108 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>@maksimkurb</title><link>https://cubly.ru/en/</link><description>Recent content on @maksimkurb</description><generator>Hugo -- gohugo.io</generator><language>ru-ru</language><copyright>Maxim Kurbatov</copyright><atom:link href="https://cubly.ru/en/index.xml" rel="self" type="application/rss+xml"/><item><title>CV</title><link>https://cubly.ru/en/work/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cubly.ru/en/work/</guid><description>Maxim Kurbatov Java developer
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>@maksimkurb</title><link>https://cubly.ru/en/</link><description>Recent content on @maksimkurb</description><generator>Hugo -- gohugo.io</generator><language>ru-ru</language><copyright>Maxim Kurbatov</copyright><atom:link href="https://cubly.ru/en/index.xml" rel="self" type="application/rss+xml"/><item><title>CV</title><link>https://cubly.ru/en/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cubly.ru/en/cv/</guid><description>Maxim Kurbatov Java developer
 Summary Have 1.5 year experience of Java development (main specialization), half of year in working with Spring stack. Mostly working with relational databases (MySQL, Postgres), but have experience with NoSQL databases (Redis, MongoDB). Previously worked with NodeJS for about 2 years.
-Contacts Telegram: @maksimkurb E-mail: max-wrk@cubly.ru Technical skills Programming languages: Java, JavaScript (+ES6), TypeScript, C#, PHP, HTML, CSS, basic level of Python Platforms: macOS, Windows, Linux Mobile Development: Android Automation tools: JUnit, Jest CI: Jenkins, GitLab CI Databases: MySQL, Postgres, MongoDB, Redis Issue Tracking: Jira, Github Experience 09/2019 - 02/2020 :: Intern Java Developer, Grid Dynamics International, Inc</description></item></channel></rss>
+Contacts Telegram: @maksimkurb E-mail: max-wrk@cubly.ru Technical skills Programming languages: Java, JavaScript (+ES6), TypeScript, C#, PHP, HTML, CSS, basic level of Python Platforms: macOS, Windows, Linux Mobile Development: Android Automation tools: JUnit, Jest CI: Jenkins, GitLab CI Databases: MySQL, Postgres, MongoDB, Redis Issue Tracking: Jira, Github Experience 09/2019 - 02/2020 :: Intern Java Developer, Grid Dynamics International, Inc</description><content>&lt;h1 id="maxim-kurbatov">Maxim Kurbatov&lt;/h1>
+&lt;p>&lt;strong>Java developer&lt;/strong>&lt;/p>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>Have 1.5 year experience of Java development (main specialization), half of year in working with Spring stack. Mostly working with relational databases (MySQL, Postgres), but have experience with NoSQL databases (Redis, MongoDB). Previously worked with NodeJS for about 2 years.&lt;/p>
+&lt;h2 id="contacts">Contacts&lt;/h2>
+&lt;ul>
+&lt;li>&lt;img src="https://cubly.ru/img/telegram.png" alt="telegram logo" class="inline"> Telegram: &lt;a href="https://t.me/maksimkurb">@maksimkurb&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://cubly.ru/img/email.png" alt="email icon" class="inline"> E-mail: &lt;a href="mailto:max-wrk@cubly.ru">max-wrk@cubly.ru&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="technical-skills">Technical skills&lt;/h2>
+&lt;ul>
+&lt;li>Programming languages: Java, JavaScript (+ES6), TypeScript, C#, PHP, HTML, CSS, basic level of Python&lt;/li>
+&lt;li>Platforms: macOS, Windows, Linux&lt;/li>
+&lt;li>Mobile Development: Android&lt;/li>
+&lt;li>Automation tools: JUnit, Jest&lt;/li>
+&lt;li>CI: Jenkins, GitLab CI&lt;/li>
+&lt;li>Databases: MySQL, Postgres, MongoDB, Redis&lt;/li>
+&lt;li>Issue Tracking: Jira, Github&lt;/li>
+&lt;/ul>
+&lt;h2 id="experience">Experience&lt;/h2>
+&lt;!-- =================== -->
+&lt;blockquote>
+&lt;p>09/2019 - 02/2020 :: Intern Java Developer, Grid Dynamics International, Inc&lt;/p>
+&lt;/blockquote>
+&lt;p>Development of batch system that accumulates customer data from various sources, process it and provide to other systems.&lt;/p>
+&lt;p>&lt;strong>Responsibilities:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Backend development
+&lt;ul>
+&lt;li>Technical design&lt;/li>
+&lt;li>Development&lt;/li>
+&lt;li>Code review&lt;/li>
+&lt;li>Creation of test cases&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Prepare demo-scripts and show demo (in English)&lt;/li>
+&lt;li>Scrum methodology&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Technologies:&lt;/strong>
+&lt;em>Java, Spring, Spring Boot, Kafka, MySQL, Maxwell, Spring Batch, Google Cloud Platform&lt;/em>&lt;/p>
+&lt;!-- =================== -->
+&lt;blockquote>
+&lt;p>2017 – 06/2018, 12/2018 - 08/2019 :: Full Stack developer&lt;/p>
+&lt;/blockquote>
+&lt;p>System for checking individuals and legal entities for risk factors. System aggregates information from various sources and generates reports by operator request. Consists of real time APIs and APIs with queue processing.&lt;/p>
+&lt;p>&lt;strong>Responsibilities:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Backend development
+&lt;ul>
+&lt;li>Implement GraphQL API&lt;/li>
+&lt;li>Third party service integration&lt;/li>
+&lt;li>Billing service integration&lt;/li>
+&lt;li>Documenting&lt;/li>
+&lt;li>Implement OAuth provider&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Frontend development
+&lt;ul>
+&lt;li>Personal profile page&lt;/li>
+&lt;li>React Native universal application (API client) (mobile &amp;amp; web)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Technologies:&lt;/strong>
+&lt;em>NestJS, GraphQL, Redis, Queues, Postgres, TypeScript, React, React Native, Git, Jenkins, Jest, Postman, Json, Xml&lt;/em>&lt;/p>
+&lt;!-- =================== -->
+&lt;blockquote>
+&lt;p>09/2018 – 11/2018 :: Frontend Developer, LIS Ltd&lt;/p>
+&lt;/blockquote>
+&lt;p>CRM for building companies&lt;/p>
+&lt;p>&lt;strong>Responsibilities:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Frontend development
+&lt;ul>
+&lt;li>Develop web app on React stack&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Setting up Continuous Integration&lt;/li>
+&lt;li>Working with Kanban methodology&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Technologies:&lt;/strong>
+&lt;em>React, Redux, Redux Saga, Reselect, Jest, NodeJS, Webpack, FeathersJS, Immutable JS, Git, Gitlab CI, Postman, Json, Shell&lt;/em>&lt;/p>
+&lt;!-- =================== -->
+&lt;blockquote>
+&lt;p>2017 :: Individual project development&lt;/p>
+&lt;/blockquote>
+&lt;p>Timetable for school lecture with website for filling schedule (with ability to importing from Dnevnik.ru) and Android app with widget&lt;/p>
+&lt;p>&lt;strong>Technologies:&lt;/strong>
+&lt;em>Meteor, FullCalendar.js, xlsx parsing, Android, Java, REST&lt;/em>&lt;/p>
+&lt;!-- =================== -->
+&lt;blockquote>
+&lt;p>2016 :: Sartax.ru&lt;/p>
+&lt;/blockquote>
+&lt;p>Interactive map (using Google Maps) with taxi drivers and their prices. Also has panel for taxi drivers with GPS location tracker and driving timer.&lt;/p>
+&lt;p>&lt;strong>Technologies:&lt;/strong>
+&lt;em>PHP, REST, Laravel, Bootstrap, GPS, Google Maps&lt;/em>&lt;/p>
+&lt;h2 id="education-and-certificates">Education and Certificates&lt;/h2>
+&lt;ul>
+&lt;li>2017-2021 (unfinished), Computer Science and Computer Engineering, Saratov State Technical University&lt;/li>
+&lt;li>2019, Web Development with Java and Spring, GridU&lt;/li>
+&lt;/ul>
+&lt;h2 id="languages">Languages&lt;/h2>
+&lt;ul>
+&lt;li>English - B2&lt;/li>
+&lt;li>Russian - native speaker&lt;/li>
+&lt;/ul></content></item><item><title>No posts have translated to English yet :(</title><link>https://cubly.ru/en/posts/0-no-posts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cubly.ru/en/posts/0-no-posts/</guid><description>Try browsing Russian version of this site instead</description><content>&lt;p>Try browsing &lt;a href="https://cubly.ru/">Russian version&lt;/a> of this site instead&lt;/p></content></item></channel></rss>

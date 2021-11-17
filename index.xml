@@ -1,4 +1,119 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>@maksimkurb</title><link>https://cubly.ru/</link><description>Recent content on @maksimkurb</description><generator>Hugo -- gohugo.io</generator><language>ru-ru</language><copyright>Maxim Kurbatov</copyright><lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://cubly.ru/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello Friend</title><link>https://cubly.ru/posts/hello/</link><pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate><guid>https://cubly.ru/posts/hello/</guid><description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
-Fusce pharetra suscipit orci nec tempor.</description></item><item><title>Мои работы</title><link>https://cubly.ru/showcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cubly.ru/showcase/</guid><description>Раздел в разработке</description></item><item><title>Обо мне</title><link>https://cubly.ru/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cubly.ru/about/</guid><description>Привет! Меня зовут Максим и я Java-разработчик. Учусь в СГТУ, в своё свободное время увлекаюсь IoT и умным домом.</description></item><item><title>Резюме</title><link>https://cubly.ru/work/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cubly.ru/work/</guid><description>Maxim Kurbatov Java developer
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>@maksimkurb</title><link>https://cubly.ru/</link><description>Recent content on @maksimkurb</description><generator>Hugo -- gohugo.io</generator><language>ru-ru</language><copyright>Maxim Kurbatov</copyright><lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cubly.ru/index.xml" rel="self" type="application/rss+xml"/><item><title>Введение в IPFS</title><link>https://cubly.ru/posts/1-ipfs/</link><pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate><guid>https://cubly.ru/posts/1-ipfs/</guid><description>Статья в разработке
+Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia pulvinar orci sit amet, eleifend eleifend dui. Nulla tempor ligula leo, eu vehicula quam condimentum a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla gravida tristique nunc sed semper. Morbi nec felis odio.
+Sed efficitur, lacus ac scelerisque pellentesque, lectus risus dignissim nisl, fermentum semper lectus diam eget lacus.</description><content>&lt;blockquote>
+&lt;p>Статья в разработке&lt;/p>
+&lt;/blockquote>
+&lt;p>Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia pulvinar orci sit amet, eleifend eleifend dui. Nulla tempor ligula leo, eu vehicula quam condimentum a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla gravida tristique nunc sed semper. Morbi nec felis odio.&lt;/p>
+&lt;ul>
+&lt;li>Sed efficitur, lacus ac scelerisque pellentesque, lectus risus dignissim nisl, fermentum semper lectus diam eget lacus.&lt;/li>
+&lt;li>Nunc ornare purus enim, id eleifend mauris vestibulum volutpat.&lt;/li>
+&lt;li>Aenean facilisis ut ipsum condimentum ultrices.&lt;/li>
+&lt;li>Fusce sed metus vulputate, lobortis purus et, finibus purus. Suspendisse quis posuere lorem. Vivamus vulputate nec risus in pulvinar.&lt;/li>
+&lt;/ul></content></item><item><title>Резюме (CV)</title><link>https://cubly.ru/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cubly.ru/cv/</guid><description>Maxim Kurbatov Java developer
 Сводка 1.5 года опыта в разработке Java-приложений (основное направление), половина года из которых - работа на стеке Spring. В основном работаю с реляционнами базами данных (MySQL, Postgres), но имею опыт работы с NoSQL базами (Redis, MongoDB). Имеется двухлетний опыт работы с NodeJS.
-Контакты Telegram: @maksimkurb E-mail: max-wrk@cubly.ru Технические умения Языки программирования: Java, JavaScript (+ES6), TypeScript, C#, PHP, HTML, CSS, базовый уровень Python Платформы: macOS, Windows, Linux Mobile Development: Android Automation tools: JUnit, Jest CI: Jenkins, GitLab CI Базы данных: MySQL, Postgres, MongoDB, Redis Issue Tracking: Jira, Github Опыт работы 09/2019 - 02/2020 :: Intern Java Developer, Grid Dynamics International, Inc</description></item></channel></rss>
+Контакты Telegram: @maksimkurb E-mail: max-wrk@cubly.ru Технические умения Языки программирования: Java, JavaScript (+ES6), TypeScript, C#, PHP, HTML, CSS, базовый уровень Python Платформы: macOS, Windows, Linux Mobile Development: Android Automation tools: JUnit, Jest CI: Jenkins, GitLab CI Базы данных: MySQL, Postgres, MongoDB, Redis Issue Tracking: Jira, Github Опыт работы 09/2019 - 02/2020 :: Intern Java Developer, Grid Dynamics International, Inc</description><content>&lt;h1 id="maxim-kurbatov">Maxim Kurbatov&lt;/h1>
+&lt;p>&lt;strong>Java developer&lt;/strong>&lt;/p>
+&lt;h2 id="сводка">Сводка&lt;/h2>
+&lt;p>1.5 года опыта в разработке Java-приложений (основное направление), половина года из которых - работа на стеке Spring. В основном работаю с реляционнами базами данных (MySQL, Postgres), но имею опыт работы с NoSQL базами (Redis, MongoDB). Имеется двухлетний опыт работы с NodeJS.&lt;/p>
+&lt;h2 id="контакты">Контакты&lt;/h2>
+&lt;ul>
+&lt;li>&lt;img src="https://cubly.ru/img/telegram.png" alt="telegram logo" class="inline"> Telegram: &lt;a href="https://t.me/maksimkurb">@maksimkurb&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://cubly.ru/img/email.png" alt="email icon" class="inline"> E-mail: &lt;a href="mailto:max-wrk@cubly.ru">max-wrk@cubly.ru&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="технические-умения">Технические умения&lt;/h2>
+&lt;ul>
+&lt;li>Языки программирования: Java, JavaScript (+ES6), TypeScript, C#, PHP, HTML, CSS, базовый уровень Python&lt;/li>
+&lt;li>Платформы: macOS, Windows, Linux&lt;/li>
+&lt;li>Mobile Development: Android&lt;/li>
+&lt;li>Automation tools: JUnit, Jest&lt;/li>
+&lt;li>CI: Jenkins, GitLab CI&lt;/li>
+&lt;li>Базы данных: MySQL, Postgres, MongoDB, Redis&lt;/li>
+&lt;li>Issue Tracking: Jira, Github&lt;/li>
+&lt;/ul>
+&lt;h2 id="опыт-работы">Опыт работы&lt;/h2>
+&lt;!-- =================== -->
+&lt;blockquote>
+&lt;p>09/2019 - 02/2020 :: Intern Java Developer, Grid Dynamics International, Inc&lt;/p>
+&lt;/blockquote>
+&lt;p>Разработка системы пакетного аккумулирования клиентских данных из различных источников, их обработки и предоставления другим системам.&lt;/p>
+&lt;p>&lt;strong>Обязанности:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Backend development
+&lt;ul>
+&lt;li>Technical design&lt;/li>
+&lt;li>Development&lt;/li>
+&lt;li>Code review&lt;/li>
+&lt;li>Creation of test cases&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Prepare demo-scripts and show demo (in English)&lt;/li>
+&lt;li>Scrum methodology&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Технологии:&lt;/strong>
+&lt;em>Java, Spring, Spring Boot, Kafka, MySQL, Maxwell, Spring Batch, Google Cloud Platform&lt;/em>&lt;/p>
+&lt;!-- =================== -->
+&lt;blockquote>
+&lt;p>2017 – 06/2018, 12/2018 - 08/2019 :: Full Stack developer&lt;/p>
+&lt;/blockquote>
+&lt;p>Система для проверки физических и юридических лиц на различные факторы риска. Сервер собирает информацию из различных источников и генерирует отчёты по запросу оператора. Имеются API, работающие в режиме реального времени и в режиме обработки в очереди (долгие проверки).&lt;/p>
+&lt;p>&lt;strong>Обязанности:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Backend development
+&lt;ul>
+&lt;li>Implement GraphQL API&lt;/li>
+&lt;li>Third party service integration&lt;/li>
+&lt;li>Billing service integration&lt;/li>
+&lt;li>Documenting&lt;/li>
+&lt;li>Implement OAuth provider&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Frontend development
+&lt;ul>
+&lt;li>Personal profile page&lt;/li>
+&lt;li>React Native universal application (API client) (mobile &amp;amp; web)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Технологии:&lt;/strong>
+&lt;em>NestJS, GraphQL, Redis, Queues, Postgres, TypeScript, React, React Native, Git, Jenkins, Jest, Postman, Json, Xml&lt;/em>&lt;/p>
+&lt;!-- =================== -->
+&lt;blockquote>
+&lt;p>09/2018 – 11/2018 :: Frontend Developer, LIS Ltd&lt;/p>
+&lt;/blockquote>
+&lt;p>CRM для строительных компаний&lt;/p>
+&lt;p>&lt;strong>Обязанности:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Frontend development
+&lt;ul>
+&lt;li>Develop web app on React stack&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Setting up Continuous Integration&lt;/li>
+&lt;li>Working with Kanban methodology&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Технологии:&lt;/strong>
+&lt;em>React, Redux, Redux Saga, Reselect, Jest, NodeJS, Webpack, FeathersJS, Immutable JS, Git, Gitlab CI, Postman, Json, Shell&lt;/em>&lt;/p>
+&lt;!-- =================== -->
+&lt;blockquote>
+&lt;p>2017 :: Individual project development&lt;/p>
+&lt;/blockquote>
+&lt;p>Расписание школьных лекций на Android с веб-сайтом для удобного заполнения списка занятий и возможностью импорта занятий с сайта dnevnik.ru&lt;/p>
+&lt;p>&lt;strong>Технологии:&lt;/strong>
+&lt;em>Meteor, FullCalendar.js, xlsx parsing, Android, Java, REST&lt;/em>&lt;/p>
+&lt;!-- =================== -->
+&lt;blockquote>
+&lt;p>2016 :: Sartax.ru&lt;/p>
+&lt;/blockquote>
+&lt;p>Интерактивная карта (на Google Maps) с отметками таксистов, их ценами, вомзожностью предварительного рассчёта приблизительной стоимости поездки. Имеется таксометр, передающий GPS-координаты водителей на сервер и рассчитывающий стоимость поездки.&lt;/p>
+&lt;p>&lt;strong>Технологии:&lt;/strong>
+&lt;em>PHP, REST, Laravel, JavaScript, Bootstrap, GPS, Google Maps&lt;/em>&lt;/p>
+&lt;h2 id="образование-и-сертификаты">Образование и сертификаты&lt;/h2>
+&lt;ul>
+&lt;li>2017-2021 (неоконченное), Информатика и вычислительная техника, Саратовский государственный технический университет имени Гагарина Ю. А.&lt;/li>
+&lt;li>2019, Web Development with Java and Spring, GridU&lt;/li>
+&lt;/ul>
+&lt;h2 id="языки">Языки&lt;/h2>
+&lt;ul>
+&lt;li>Английский - B2&lt;/li>
+&lt;li>Русский - родной язык&lt;/li>
+&lt;/ul></content></item></channel></rss>
