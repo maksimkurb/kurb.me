@@ -8,6 +8,12 @@
   padding: 10px;
   list-style: none;
   z-index: 99;
+
+  @media screen and (prefers-color-scheme: light) {
+    background: var(--background-light);
+    box-shadow: var(--shadow-light);
+    color: var(--color-light);
+  }
 }
 
 .header {
@@ -33,6 +39,9 @@
     &:after {
       content: '';
       background: var(--background-strips);
+      @media screen and (prefers-color-scheme: light) {
+        background: var(--background-strips-light);
+      }
       display: block;
       width: 100%;
       right: 10px;
@@ -49,6 +58,11 @@
   .menu {
     --shadow-color: color-mod(var(--background) a(80%));
     --shadow: 0 10px var(--shadow-color), -10px 10px var(--shadow-color), 10px 10px var(--shadow-color);
+    --shadow-color-light: color-mod(var(--accent) a(10%));
+    --shadow-light: 0 10px var(--shadow-color-light), -10px 10px var(--shadow-color-light), 10px 10px var(--shadow-color-light);
+    --margin: 15px;
+    --margin-negative: -15px;
+
     margin: 20px 0;
 
     @media (--phone) {
@@ -60,6 +74,10 @@
     .placeholder {
       flex-grow: 1;
       background: var(--background);
+
+      @media screen and (prefers-color-scheme: light) {
+        background: var(--background-light);
+      }
     }
 
     &__inner {
@@ -88,26 +106,47 @@
         content: "";
         position: absolute;
         display: block;
-        width: 20px;
+        width: var(--margin);
         background: var(--background);
+        box-shadow: 0px 0px 0px 1px var(--background);
         height: 100%;
-        right: -20px;
+        right: var(--margin-negative);
         top: 0;
+
+        @media screen and (prefers-color-scheme: light) {
+          background: var(--background-light);
+          box-shadow: 0px 0px 0px 1px var(--background-light);
+        }
+      }
+
+      &>.menu__external a:after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='#ffffff' viewBox='0 0 24 24'%3E%3Cpath d='M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z'/%3E%3C/svg%3E") !important;
+        padding-left: 8px;
+
+        @media screen and (prefers-color-scheme: light) {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='#0c2426' viewBox='0 0 24 24'%3E%3Cpath d='M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z'/%3E%3C/svg%3E") !important;
+        }
       }
 
       li {
         position: relative;
 
         a {
-          padding: 4px;
+          padding: 6px;
           background: var(--background);
+          color: var(--color);
+
+          @media screen and (prefers-color-scheme: light) {
+            background: var(--background-light);
+            color: var(--color-light);
+          }
           &:hover {
             background: transparent;
           }
         }
 
         &:not(:last-of-type) {
-          margin-right: 20px;
+          margin-right: var(--margin);
           flex: 0 0 auto;
         }
       }
@@ -161,13 +200,19 @@
     .spacer {
       flex-grow: 1;
       background: var(--background);
+      box-shadow: 0px 0px 0px 1px var(--background);
+
+      @media screen and (prefers-color-scheme: light) {
+        background: var(--background-light);
+        box-shadow: 0px 0px 0px 1px var(--background-light);
+      }
     }
 
     .language-selector {
       position: relative;
       list-style: none;
       margin: 0;
-      color: white;
+      color: var(--color);
 
       &-current {
         list-style-type: none;
@@ -175,9 +220,13 @@
         flex-direction: row;
         cursor: pointer;
         margin: 0;
-        padding: 0 4px;
+        padding: 0 6px;
         background: var(--background);
 
+        @media screen and (prefers-color-scheme: light) {
+          color: var(--color-light);
+          background: var(--background-light);
+        }
         &:hover {
           background: transparent;
         }
@@ -198,6 +247,10 @@
       padding: 3px 8px;
       position: relative;
       cursor: pointer;
+
+      @media screen and (prefers-color-scheme: light) {
+        color: var(--accent-light);
+      }
     }
   }
 }

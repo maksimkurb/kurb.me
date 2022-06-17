@@ -1,5 +1,5 @@
 ---
-title: "No posts have translated to English yet :("
+title: "No posts has been translated to English yet :("
 showFullContent: true
 date: false
 ---

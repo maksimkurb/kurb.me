@@ -6,11 +6,11 @@ title: "CV"
 **Java developer**
 
 ## Summary
-Have 1.5 year experience of Java development (main specialization), half of year in working with Spring stack. Mostly working with relational databases (MySQL, Postgres), but have experience with NoSQL databases (Redis, MongoDB). Previously worked with NodeJS for about 2 years.
+Have 3 years of experience in commercial development on the Spring stack with microservice architecture. Mostly working with relational databases (MySQL, Postgres), but have some experience with NoSQL databases (Hazelcast, Redis, MongoDB). Previously worked with Node JS for about 2 years.
 
 ## Contacts
 * <img src="/img/telegram.png" alt="telegram logo" class="inline"> Telegram: [@maksimkurb](https://t.me/maksimkurb)
-* <img src="/img/email.png" alt="email icon" class="inline"> E-mail: [max-wrk@cubly.ru](mailto:max-wrk@cubly.ru)
+* <img src="/img/email.png" alt="email icon" class="inline"> E-mail: [max@cubly.ru](mailto:max@cubly.ru)
 
 ## Technical skills
 * Programming languages: Java, JavaScript (+ES6), TypeScript, C#, PHP, HTML, CSS, basic level of Python

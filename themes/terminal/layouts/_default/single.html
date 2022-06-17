@@ -15,7 +15,7 @@
       <span class="post-author">:: {{ . }}</span>
     {{ end }}
     {{ if and (.Param "readingTime") (eq (.Param "readingTime") true) }}
-      <span class="post-reading-time">:: {{ .ReadingTime }} min read ({{ .WordCount }} words)</span>
+      <span class="post-reading-time">:: {{ .ReadingTime }} {{ $.Site.Params.MinRead }}</span>
     {{ end }}
     <div class="post-languages">
       {{ if .IsTranslated }}

@@ -17,7 +17,7 @@ code.language-scss,
 .token.number,
 .token.inserted,
 .token.important {
-  color: var(--accent) !important;
+  color: var(--accent);
 }
 
 .token.tag-id,
@@ -34,7 +34,7 @@ code.language-scss,
 .token.class-name,
 .token.constant,
 .token.symbol {
-  color: color-mod(var(--accent) a(70%)) !important;
+  color: color-mod(var(--accent) a(70%));
 }
 
 .token.property,
@@ -44,7 +44,7 @@ code.language-scss,
 code.language-javascript,
 code.language-html,
 .command-line-prompt > span:before {
-  color: color-mod(var(--accent) blend(#999 90%)) !important;
+  color: color-mod(var(--accent) blend(#999 90%));
 }
 
 .token.selector,
@@ -57,11 +57,11 @@ code.language-html,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: rgba(255, 255, 255, .3) !important;
+  color: rgba(255, 255, 255, .3);
 }
 
 .token.namespace {
-  opacity: .7 !important;
+  opacity: .7;
 }
 
 pre[data-line] {
@@ -143,13 +143,13 @@ pre[class*="language-"] {
 
   > .toolbar {
     button {
-      font-size: .8em !important;
-      background: hsla(0,0%,87.8%,.2) !important;
-      color: #bbb !important;
-      box-shadow: 0 2px 0 0 rgba(0,0,0,.2) !important;
-      border-radius: 0 !important;
-      margin: 6px !important;
-      padding: 10px !important;
+      font-size: .8em;
+      background: hsla(0,0%,87.8%,.2);
+      color: #bbb;
+      box-shadow: 0 2px 0 0 rgba(0,0,0,.2);
+      border-radius: 0;
+      margin: 6px;
+      padding: 10px;
       user-select:none
     }
   }

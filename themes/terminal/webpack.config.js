@@ -44,14 +44,7 @@ module.exports = (env, { mode }) => ({
       },
       {
         test: /\.(png|jpg|woff|woff2|ttf|eot|svg)$/,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              limit: 8192,
-            },
-          },
-        ],
+        type: 'asset/resource',
       },
       {
         test: /\.css$/,

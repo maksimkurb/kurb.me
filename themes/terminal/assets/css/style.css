@@ -12,6 +12,7 @@
 
 @import 'prism.css';
 @import 'syntax.css';
+@import 'syntax-light.css';
 @import 'code.css';
 @import 'terms.css';
 @import 'gist.css';

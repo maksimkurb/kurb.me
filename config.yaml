@@ -36,6 +36,7 @@ languages:
     menuMore: Ссылки
     readMore: Читать далее
     readOtherPosts: Читать другие публикации
+    minRead: мин. на чтение
 
     params:
       logo:
@@ -67,16 +68,22 @@ languages:
       - identifier: github
         name: GitHub
         url: https://github.com/maksimkurb/
+        params:
+          external: true
         weight: 5
 
       - identifier: telegram
         name: Telegram
         url: https://t.me/maksimkurb
+        params:
+          external: true
         weight: 6
 
       - identifier: linkedin
         name: LinkedIn
         url: https://www.linkedin.com/in/maxim-kurbatov/
+        params:
+          external: true
         weight: 7
 
   en:
@@ -87,6 +94,7 @@ languages:
     menuMore: More
     readMore: Read more
     readOtherPosts: Read other posts
+    minRead: min read
 
     params:
       logo:
@@ -119,14 +127,20 @@ languages:
       - identifier: github
         name: GitHub
         url: https://github.com/maksimkurb/
+        params:
+          external: true
         weight: 5
 
       - identifier: telegram
         name: Telegram
         url: https://t.me/maksimkurb
+        params:
+          external: true
         weight: 6
 
       - identifier: linkedin
         name: LinkedIn
         url: https://www.linkedin.com/in/maxim-kurbatov/
+        params:
+          external: true
         weight: 7
