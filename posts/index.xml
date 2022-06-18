@@ -1,12 +1,201 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on @maksimkurb</title><link>https://cubly.ru/posts/</link><description>Recent content in Posts on @maksimkurb</description><generator>Hugo -- gohugo.io</generator><language>ru-ru</language><copyright>Maxim Kurbatov</copyright><lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cubly.ru/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Введение в IPFS</title><link>https://cubly.ru/posts/1-ipfs/</link><pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate><guid>https://cubly.ru/posts/1-ipfs/</guid><description>Статья в разработке
-Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia pulvinar orci sit amet, eleifend eleifend dui. Nulla tempor ligula leo, eu vehicula quam condimentum a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla gravida tristique nunc sed semper. Morbi nec felis odio.
-Sed efficitur, lacus ac scelerisque pellentesque, lectus risus dignissim nisl, fermentum semper lectus diam eget lacus.</description><content>&lt;blockquote>
-&lt;p>Статья в разработке&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on @maksimkurb</title><link>https://cubly.ru/posts/</link><description>Recent content in Posts on @maksimkurb</description><generator>Hugo -- gohugo.io</generator><language>ru-ru</language><copyright>Maxim Kurbatov</copyright><lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cubly.ru/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Введение в IPFS</title><link>https://cubly.ru/posts/1-ipfs/</link><pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate><guid>https://cubly.ru/posts/1-ipfs/</guid><description>Выясним что же такое IPFS.
+IPFS (InterPlanetary File System) &amp;mdash; это распределённая система для хранения и доступа к файлам, вебсайтам, приложениям и данным.
+IPFS &amp;mdash; это пиринговая сеть хранения данных. Контент доступен через одноранговые узлы, расположенные в любой точке мира, которые могут передавать информацию, хранить ее или делать и то, и другое. Принцип работы IPFS схож с работой BitTorrent-клиентов, IPFS тоже использует распределённые хеш-таблицы (DHT) и способен за секунды найти участников сети, которые могут поделиться запрашиваемыми файлами.</description><content>&lt;p>Выясним что же такое IPFS.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>IPFS (InterPlanetary File System)&lt;/strong> &amp;mdash; это распределённая система для хранения и доступа к файлам, вебсайтам, приложениям и данным.&lt;/p>
 &lt;/blockquote>
-&lt;p>Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia pulvinar orci sit amet, eleifend eleifend dui. Nulla tempor ligula leo, eu vehicula quam condimentum a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla gravida tristique nunc sed semper. Morbi nec felis odio.&lt;/p>
+&lt;p>IPFS &amp;mdash; это пиринговая сеть хранения данных. Контент доступен через одноранговые узлы, расположенные в любой точке мира, которые могут передавать информацию, хранить ее или делать и то, и другое. Принцип работы IPFS схож с работой BitTorrent-клиентов, IPFS тоже использует &lt;em>распределённые хеш-таблицы&lt;/em> (&lt;strong>DHT&lt;/strong>) и способен за секунды найти участников сети, которые могут поделиться запрашиваемыми файлами. Чтобы понять, какие это даёт преимущества, стоит понять разницу в том, как мы сёрфим привычный нам интернет и как это отличается от подхода, предлагаемого IPFS.&lt;/p>
+&lt;p>Когда мы пользуемся браузером, для доступа к контенту мы используем &lt;strong>URL&lt;/strong> (&lt;strong>Uniform Resource Locator&lt;/strong>), который говорит, где мы можем найти тот или иной контент.
+Пример такого адреса &amp;mdash; &lt;code>https://mysite.com/my_perfect_book.pdf&lt;/code>&lt;/p>
+&lt;p>Что мы можем понять из этого адреса? Файл называется &lt;code>my_perfect_book.pdf&lt;/code>, находится на сайте &lt;code>mysite.com&lt;/code>, IP-адрес которого мы можем узнать с помощью &lt;strong>DNS&lt;/strong>. Нам неизвестно ничего о содержимом контента, пока мы не загрузим его, более того, содержимое может меняться со временем, так &lt;a href="https://int0x33.medium.com/solarwinds-what-probably-most-likely-happened-ec4e588ce5da">мы можем скачать совсем не то, что ожидали&lt;/a>. Также есть риск того, что материалы будут подвергнуты цензуре (возможно, &lt;a href="https://www.linux.org.ru/forum/talks/14315937">даже по ошибке&lt;/a>), либо сайт просто прекратит своё существование.&lt;/p>
+&lt;p>В IPFS, в отличие от классического веба, используются адреса следующего вида: &lt;code>QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco&lt;/code>, называемые &lt;strong>Content Identifier&lt;/strong> (сокращённо &lt;strong>CID&lt;/strong>). В отличие от традиционных &lt;strong>URL&lt;/strong>, которые указывают на то, где файл расположен, адреса &lt;strong>IPFS&lt;/strong> создаются на основе содержимого контента (если быть точнее, вычисляется &lt;a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F">криптографический хеш&lt;/a>). Это даёт нам два преимущества:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Мы всегда можем проверить, что скачанные нами данные не были подменены кем-либо, просто посчитав для него хеш-функцию. Если хоть один байт файла отличается, хеши просто не совпадут, и IPFS отбросит такой файл.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Так как адрес указывает не &amp;ldquo;откуда&amp;rdquo;, а &amp;ldquo;какие&amp;rdquo; получить данные, их становится гораздо сложнее подвергнуть цензуре. Файлы могут находиться сразу в нескольких хранилищах, в кеше пользователей IPFS, поэтому даже если полностью заблокировать весь внешний интернет, данные можно будет получить, если они остались в хранилище хотя бы у одного достижимого пира.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="как-устроен-ipfs">Как устроен IPFS?&lt;/h2>
+&lt;p>Для понимания IPFS необходимо разобрать 3 фундаментальных принципа:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Уникальная идентификация ресурса с помощью контентной адресации&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Связывание контента с помощью направленных ациклических графиков (DAGs)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Обнаружение контента с помощью распределенных хэш-таблиц (DHTs)&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="контентная-адресация-в-ipfs">Контентная адресация в IPFS&lt;/h3>
+&lt;p>Данный пункт мы уже частично разобрали выше, для каждого образа данных создаётся &lt;strong>Content Identifier&lt;/strong> (&lt;strong>CID&lt;/strong>) &amp;mdash; хеш-сумма, которая уникально адресует эти данные. На самом деле, помимо хеш-суммы, CID содержит версию (сейчас их существует две, CID версии 0 начинаются на &lt;code>Qm&lt;/code>, CID версии 1 устроены несколько сложнее и содержат в себе &lt;a href="https://github.com/multiformats/multibase#multibase-table">префикс способа кодирования&lt;/a> CID и &lt;a href="https://ipfs.io/ipfs/QmXec1jjwzxWJoNbxQF5KffL8q6hFXm9QwUGaa3wKGk6dT/#title=Multicodecs&amp;amp;src=https://raw.githubusercontent.com/multiformats/multicodec/master/table.csv">формат содержимого&lt;/a>, чтобы программы знали, как интерпретировать контент). На официальном сайте есть &lt;a href="https://cid.ipfs.io/#bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi">удобная страница&lt;/a>, которая показывает, как интерпретировать CID.&lt;/p>
+&lt;h3 id="что-такое-merkle-dag-и-как-это-используется-в-ipfs">Что такое Merkle DAG и как это используется в IPFS?&lt;/h3>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/dag.png" style="background:#F2F6FF" />
+&lt;figcaption class="center" >Бинарное хеш-дерево&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D1%85%D0%B5%D1%88%D0%B5%D0%B9">Дерево Меркла&lt;/a> (или Дерево Хешей) &amp;mdash; это полное двоичное дерево, листья которого содержат хеши блоков данных, а внутренние вершины содержат хеши от сложения значений в их дочерних вершинах. В IPFS вместо хешей используются Content Identifier.&lt;/p>
+&lt;p>Такая структура позволяет IPFS связывать сложные структуры, например, целую папку файлов или git-репозиторий. Большие файлы в IPFS разбиваются на чанки (размер которых зависит от типа контента), соответственно, при загрузке большого файла в IPFS также будет построено дерево хешей, имеющее свой CID и указывающего на CID каждого чанка. Существует &lt;a href="https://explore.ipld.io/#/explore/QmSnuWmxptJZdLJpKRarxBMS2Ju2oANVrgbr2xWbie9b2D">специальный инструмент&lt;/a>, наглядно показывающий такие деревья.&lt;/p>
+&lt;p>Если вдруг мы решим изменить часть файла и опубликовать новую версию в IPFS, хеш листьев, отвечающих за изменённые блоки данных, изменится, вследствие чего изменятся хеши их родительских элементов, вплоть до корневого. Однако хеш тех листьев, контент блоков которых не изменился, останется прежним, соответственно, новый и старый файл, хоть и будут иметь разные CID, но будут ссылаться на одни и те же CID совпадающих блоков данных. Таким образом, достигается дедупликация контента.&lt;/p>
+&lt;h3 id="обнаружение-контента-с-помощью-dht">Обнаружение контента с помощью DHT&lt;/h3>
+&lt;p>&lt;strong>Хеш-таблица&lt;/strong> &amp;mdash; это обычная таблица с двумя полями: ключ и значение.
+&lt;strong>Распределённая хеш-таблица&lt;/strong> &amp;mdash; это таблица, которая разделена между всеми пирами в распределенной сети. Чтобы найти контент, необходимо спросить о нём среди своих пиров.&lt;/p>
+&lt;p>После того, как IPFS узнаёт, где находится контент (а если быть точнее, у каких пиров хранятся блоки данных, из которых состоит загружаемый контент), IPFS использует DHT ещё раз, чтобы узнать, где эти пиры находятся на данный момент (процедура маршрутизации).&lt;/p>
+&lt;p>Теперь мы знаем, у каких пиров есть нужный нам контент и как с этими пирами связаться. Затем, IPFS связывается с этими пирами, отправляет им список желаний (CID блоков, которые мы хотим получить), а пиры отправляют эти блоки. После получения блоков данных, IPFS генерирует CID на основе полученных данных, чтобы сверить его с CID, который мы запросили. Таким образом, можно проверить, что данные не были никем подменены.&lt;/p>
+&lt;h2 id="а-где-хранятся-данные">А где хранятся данные?&lt;/h2>
+&lt;p>Публикуемые в IPFS данные хранятся на нодах &amp;mdash; участниках сети. Если вы создавали свои торрент-раздачи, вы знаете, что изначально файлы есть только у вас, вы публикуете их и раздаёте другим участникам. Если вы не успеете никому отдать свою копию файлов и выключите свой компьютер, никто не сможет скачать ваши данные, поэтому нужно дождаться, пока хотя бы несколько человек их скачают и начнут раздавать, прежде чем самому уходить с раздачи.&lt;/p>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/ipfs-desktop.png" />
+&lt;figcaption class="center" >Список закреплённых файлов на локальной ноде&lt;/figcaption>
+&lt;/figure>
+&lt;p>В IPFS всё происходит похожим образом. Как только вы публикуете какой-либо контент на локальной ноде, он &amp;ldquo;закрепляется&amp;rdquo; (&lt;strong>pinning&lt;/strong>), IPFS будет хранить его вечно на вашем устройстве, пока вы не открепите его (&lt;strong>unpin&lt;/strong>). Когда кто-то запросит контент, который есть у вас, он автоматически сохранит его копию в свой локальный кеш. Однако, следует иметь в виду, что данный кеш не перманентный, следовательно, со временем тот пир перестанет раздавать эту информацию, если к ней никто долго не обращался. При этом никто не запрещает другому пиру также &amp;ldquo;закрепить&amp;rdquo; скачанные от вас файлы, тогда он продолжит раздавать их вместе с вами.&lt;/p>
+&lt;blockquote>
+&lt;p>Пользователи IPFS закрепляют себе ту информацию, которую считают ценной для себя, поэтому информация, которая никем не закреплена (а значит, никому не представляет ценности) со временем удаляется для экономии места.&lt;/p>
+&lt;/blockquote>
+&lt;p>Понятно, что держать опубликованную информацию на своем личном устройстве и постоянно раздавать её &amp;mdash; не всегда удобно, для решения этой проблемы на помощь приходят &lt;a href="https://docs.ipfs.io/concepts/persistence/#pinning-services">Pinning Services&lt;/a>, по сути, это можно считать облачным хранилищем, куда можно загрузить свои данные, чтобы они были всегда доступны в IPFS.&lt;/p>
+&lt;h2 id="интеграция-с-всемирной-паутиной">Интеграция с всемирной паутиной&lt;/h2>
+&lt;p>Для интеграции с существующим вебом существует две технологии, которые применяются совместно: &lt;strong>IPFS Gateway&lt;/strong> и &lt;strong>DNSLink&lt;/strong>&lt;/p>
+&lt;h3 id="ipfs-gateway">IPFS Gateway&lt;/h3>
+&lt;p>&lt;a href="https://docs.ipfs.io/concepts/ipfs-gateway">Шлюз IPFS&lt;/a> &amp;mdash; это сервер, который позволяет получить доступ к файлам в сети IPFS из браузеров, пока не поддерживающих доступ к IPFS напрямую. Шлюз можно поднять у себя локально, либо воспользоваться публичным, например &lt;a href="https://ipfs.io">https://ipfs.io&lt;/a>. Следует отметить, что при использовании шлюза, вы не сможете проверять CID скачанных файлов на клиентском устройстве, поэтому вы должны доверять шлюзу, либо не пользоваться им вовсе.&lt;/p>
+&lt;h3 id="dnslink">DNSLink&lt;/h3>
+&lt;p>&lt;a href="https://docs.ipfs.io/concepts/dnslink/">DNSLink&lt;/a> использует TXT-записи DNS для того, чтобы закрепить CID за определённым доменом. Например, мы можем узнать, что домен &lt;a href="https://ipfs.io/">ipfs.io&lt;/a> указывает на CID &lt;code>Qmf6DcRku4QUBjkToCSj3dMkhipUgg1NURYSMUFNsj1jsF&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ dig +noall +answer TXT &lt;span style="color:#ae81ff">\_&lt;/span>dnslink.ipfs.io
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">\_&lt;/span>dnslink.ipfs.io. &lt;span style="color:#ae81ff">30&lt;/span> IN TXT &lt;span style="color:#e6db74">&amp;#34;dnslink=/ipns/website.ipfs.io&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ dig +noall +answer TXT &lt;span style="color:#ae81ff">\_&lt;/span>dnslink.website.ipfs.io
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">\_&lt;/span>dnslink.website.ipfs.io. &lt;span style="color:#ae81ff">30&lt;/span> IN TXT &lt;span style="color:#e6db74">&amp;#34;dnslink=/ipfs/Qmf6DcRku4QUBjkToCSj3dMkhipUgg1NURYSMUFNsj1jsF&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Как видно из примера выше, TXT-запись &lt;code>_dnslink.ipfs.io&lt;/code> указывала на адрес &lt;code>/ipns/website.ipfs.io&lt;/code>, а &lt;code>website.ipfs.io&lt;/code>, в свою очередь, указывает на конкретный IPFS CID.&lt;/p>
+&lt;p>Тут стоит ещё упомянуть &lt;a href="https://docs.ipfs.io/concepts/ipns/">IPNS (InterPlanetary Name System)&lt;/a>. IPNS позволяет вам создавать длинные адреса вида &lt;code>k5...&lt;/code>, которые ссылаются на конкретный CID и могут быть обновлены вами. Таким образом при загрузке новой версии файла у вас не будет необходимости рассылать всем новый CID, пользователи сразу узнают его, обращаясь к данным по IPNS. &lt;strong>DNSLink&lt;/strong> является альтернативой IPNS, используя доменные имена, вместо длинных хешей. DNSLink работает быстрее и легко запоминается, однако нужно понимать, что DNS-сервера могут быть подвергнуты блокировкам, либо их ответ может быть подменён, если вы не используете &lt;a href="https://www.cloudflare.com/ru-ru/learning/dns/dns-over-tls/">DoH или DoT&lt;/a>.&lt;/p>
+&lt;h2 id="как-пользоваться">Как пользоваться&lt;/h2>
+&lt;p>Можно поставить себе консольную утилиту &lt;a href="https://docs.ipfs.io/how-to/command-line-quick-start/">ipfs-cli&lt;/a> или &lt;a href="https://docs.ipfs.io/install/ipfs-desktop/">десктопный клиент&lt;/a>, который включает в себя IPFS-ноду и файловый менеджер, а также &lt;a href="https://docs.ipfs.io/install/ipfs-companion/#install">расширение для браузера&lt;/a>, которое позволит открывать IPFS-ссылки в своём браузере, используя локальную ноду.&lt;/p>
+&lt;p>В этой статье в качестве примера мы создадим одностраничный сайт-резюме, опубликуем его в IPFS, используя один из pinning-сервисов, и настроим DNS, чтобы при открытии нашего сайта из обычного браузера пользователи могли его увидеть.&lt;/p>
+&lt;h3 id="создание-одностраничного-сайта-резюме">Создание одностраничного сайта-резюме&lt;/h3>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/hugo-logo-wide.svg" />
+&lt;/figure>
+&lt;p>Нам нужно подготовить статичную версию сайта, простой набор страничек. На этом этапе долго останавливаться не будем, &lt;a href="https://gohugo.io/getting-started/quick-start/">на данной странице&lt;/a> можно найти пошаговую инструкцию по созданию такого сайта с помощью генератора &lt;a href="https://gohugo.io/">Hugo&lt;/a> (&lt;a href="https://thecode.media/hugo/">а вот тут можно найти инструкцию на русском&lt;/a>).&lt;/p>
+&lt;div class="collapsable-code">
+&lt;input id="295637184" type="checkbox" />
+&lt;label for="295637184">
+&lt;span class="collapsable-code__language">bash&lt;/span>
+&lt;span class="collapsable-code__title">Создаём заготовку статичного сайта&lt;/span>
+&lt;span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽">&lt;/span>
+&lt;/label>
+&lt;pre class="language-bash" >&lt;code>
+# Устанавливаем Hugo
+snap install hugo
+# Создаем основу вебсайта
+hugo new site my-website
+cd my-website
+# Устанавливаем тему
+# Список существующих тем: &amp;lt;https://themes.gohugo.io/&amp;gt;
+git init
+git submodule add &amp;lt;https://github.com/gurusabarish/hugo-profile.git&amp;gt; themes/hugo-profile
+# Включаем тему
+rm config.toml
+cp ./themes/hugo-profile/website/v3.yaml ./config.yaml
+sed -i &amp;#39;s/\\.\\/\\.\\./hugo-profile/g&amp;#39; ./config.yaml
+# Редактируем созданную конфигурацию под себя
+vim ./config.yaml
+# Запускаем сервер для просмотра получившегося сайта
+hugo serve
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;p>Переходим по ссылке &lt;a href="http://localhost:1313">http://localhost:1313&lt;/a> и видим получившийся сайт:&lt;/p>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/hugo-bootstrap.png" />
+&lt;figcaption class="center" >Одностраничный сайт на типовом шаблоне hugo-profile от Guru Sabarish&lt;/figcaption>
+&lt;/figure>
+&lt;p>Теперь мы можем ввести команду hugo , и наш сайт скомпилируется в папку public. Содержимое этой папки мы и будем публиковать в IPFS.&lt;/p>
+&lt;h3 id="публикация-файлов-в-ipfs">Публикация файлов в IPFS&lt;/h3>
+&lt;p>Чтобы нам не приходилось держать свой компьютер постоянно включённым, воспользуемся одним из &lt;a href="https://docs.ipfs.io/concepts/persistence/#pinning-services">Pinning сервисов&lt;/a>. Я выбрал &lt;a href="https://www.pinata.cloud/">Pinata&lt;/a>, он предоставляет 1ГБ бесплатного хранилища и не требует привязки банковской карты.&lt;/p>
+&lt;p>После регистрации и загрузки папки public на сайт, мы получаем CID, по которому мы можем посмотреть наше содержимое:&lt;/p>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/pinata.png" />
+&lt;figcaption class="center" >Жёлтым выделен Content Identifier загруженной папки&lt;/figcaption>
+&lt;/figure>
+&lt;p>Нажав на значок глаза левее, мы можем просмотреть наш сайт в браузере (как можно заметить, я выбрал другой шаблон для своего сайта):&lt;/p>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/this-site.png" />
+&lt;figcaption class="center" >Этот сайт, загруженный в IPFS и открытый через IPFS Gateway&lt;/figcaption>
+&lt;/figure>
+&lt;p>Также мы можем открыть приложение IPFS Desktop и посмотреть содержимое папки с сайтом, введя CID в поле в верхней части интерфейса. Папка может загрузиться не сразу, следует подождать, пока IPFS найдет пиров, у которых она есть.&lt;/p>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/site-on-ipfs.png" />
+&lt;figcaption class="center" >Содержимое нашей папки с сайтом, загруженной в сеть IPFS&lt;/figcaption>
+&lt;/figure>
+&lt;p>Запомним наш CID, он пригодится нам позднее, когда мы будем настраивать свой домен: QmZkSWaUY1dTeCNokmBdV9rS2SgRBGvTzbA2Xk49EPc6FE.&lt;/p>
+&lt;h3 id="настройка-dns-часть-1">Настройка DNS, часть 1&lt;/h3>
+&lt;p>Последним этапом будет ассоциация нашего доменного имени с Content Identifier (помните, мы говорили про &lt;a href="http://docs.ipfs.io.ipns.localhost:8080/concepts/dnslink/">DNSLink&lt;/a>?). Будем считать, что у вас уже есть собственное доменное имя и доступ к настройке его DNS-записей.&lt;/p>
+&lt;p>В моём распоряжении есть доменное имя &lt;a href="https://cubly.ru">cubly.ru&lt;/a>, DNS-записи которого управляются через Cloudflare. Чтобы сайт был доступен по нашему доменному имени пользователям IPFS, нам необходимо создать TXT-запись с именем &lt;code>_dnslink.&amp;lt;доменное_имя&amp;gt;&lt;/code> и значением &lt;code>dnslink=/ipfs/&amp;lt;ваш_CID&amp;gt;&lt;/code>.&lt;/p>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/cloudflare-txt-entry.png" />
+&lt;figcaption class="center" >TXT-запись, указывающая на CID моей папки&lt;/figcaption>
+&lt;/figure>
+&lt;p>После этого наш сайт стал доступен для пользователей IPFS помимо адреса /ipfs/QmZk.. через более лаконичный и запоминающийся адрес /ipns/cubly.ru (&lt;a href="https://ipfs.io/ipns/cubly.ru/">посмотреть через IPFS Gateway&lt;/a>).&lt;/p>
+&lt;p>Если мы установим плагин IPFS Companion и попробуем открыть сайт &lt;a href="https://cubly.ru">cubly.ru&lt;/a> в браузере, плагин автоматически определит, что сайт доступен в IPFS (найдя созданную нами TXT-запись) и переадресует на наш локальный Gateway: &lt;a href="http://cubly.ru.ipns.localhost:8080">http://cubly.ru.ipns.localhost:8080&lt;/a>. Наш локальный IPFS Gateway убедится, что все загруженные браузером файлы подлинные, подсчитав их хеш-суммы.&lt;/p>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/ipfs-plugin-status.png" />
+&lt;figcaption class="center" >TXT-запись, указывающая на CID моей папки&lt;/figcaption>
+&lt;/figure>
+&lt;p>Как видно на скриншоте, в плагине есть опция &amp;ldquo;Import to Files on My Node&amp;rdquo;. Мы можем нажать на неё, чтобы импортировать содержимое сайта на нашу IPFS-ноду и раздавать содержимое сайта уже со своего компьютера, чтобы сайт открывался быстрее у пользователей, которые находятся в вашем городе, пока IPFS Desktop запущен. Если вы закроете его, то сайт всё равно останется доступен, ведь он есть на Pinata и у других нод, которые успели закешировать его, просто вашим соседям придётся немного подождать, пока их IPFS нода найдёт другие пиры.&lt;/p>
+&lt;h3 id="настройка-dns-часть-2">Настройка DNS, часть 2&lt;/h3>
+&lt;p>Мы настроили DNSLink запись, и сайт стал доступен по удобному имени для пользователей IPFS, но что делать с пользователями, которые ещё не пользуются Web 3.0?&lt;/p>
+&lt;p>Всё до банальности просто: мы настроим CNAME-запись, которая перенаправит всех обычных пользователей на публичный IPFS Gateway. Так как я пользуюсь Cloudflare, будет логично воспользоваться их собственным IPFS Gateway: cloudflare-ipfs.com. Почитать о нём можно в &lt;a href="https://blog.cloudflare.com/continuing-to-improve-our-ipfs-gateway/">блоге Cloudflare&lt;/a>.&lt;/p>
+&lt;p>Нам же достаточно просто добавить CNAME-запись на наш домен и проверить, что сайт открывается с любого устройства:&lt;/p>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/cloudflare-cname-entry.png" />
+&lt;figcaption class="center" >Добавление CNAME-записи на домен cubly.ru&lt;/figcaption>
+&lt;/figure>
+&lt;p>Имейте в виду, что по стандарту, CNAME-запись невозможно применить на корневой домен, Cloudflare автоматически подставляет IP-адрес cloudflare-ipfs.com в нашу запись. Если ваш DNS-провайдер не умеет делать это автоматически, можно создать A-запись, указывающую на IP cloudflare-ipfs.com:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ nslookup cloudflare-ipfs.com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Non-authoritative answer:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Name: cloudflare-ipfs.com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Address: 104.17.64.14
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Name: cloudflare-ipfs.com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Address: 104.17.96.13
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Name: cloudflare-ipfs.com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Address: 2606:4700::6811:400e
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Name: cloudflare-ipfs.com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Address: 2606:4700::6811:600d
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/cloudflare-a-entry.png" />
+&lt;figcaption class="center" >Создаём A-запись, указывающую на IP Cloudflare IPFS Gateway&lt;/figcaption>
+&lt;/figure>
+&lt;p>Теперь сайт должен стать доступным для всех пользователей, в том числе для тех, кто не пользуется IPFS. Как видно из скриншота ниже, IPFS Companion выключен, а сайт продолжает открываться.&lt;/p>
+&lt;figure class="left" >
+&lt;img src="../post-resources/1-ipfs/ipfs-plugin-off.png" />
+&lt;figcaption class="center" >Размещённый в IPFS сайт доступен для всех пользователей&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="итог">Итог&lt;/h2>
+&lt;p>В результате мы с вами познакомились с IPFS и принципом её работы, а также опубликовали свой сайт в общей сети, обеспечив доступ к нему пользователям IPFS и Web. Просматривая сайт, пользователи IPFS будут сохранять его ресурсы в своём кеше, увеличивая его доступность, скорость его загрузки и делая его более распределённым.&lt;/p>
+&lt;p>У IPFS масса применений, вот несколько из них:&lt;/p>
 &lt;ul>
-&lt;li>Sed efficitur, lacus ac scelerisque pellentesque, lectus risus dignissim nisl, fermentum semper lectus diam eget lacus.&lt;/li>
-&lt;li>Nunc ornare purus enim, id eleifend mauris vestibulum volutpat.&lt;/li>
-&lt;li>Aenean facilisis ut ipsum condimentum ultrices.&lt;/li>
-&lt;li>Fusce sed metus vulputate, lobortis purus et, finibus purus. Suspendisse quis posuere lorem. Vivamus vulputate nec risus in pulvinar.&lt;/li>
-&lt;/ul></content></item></channel></rss>
+&lt;li>
+&lt;p>хранение ресурсов, привязанных к &lt;a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC%D1%8B%D0%B9_%D1%82%D0%BE%D0%BA%D0%B5%D0%BD">NFT токенам&lt;/a> или к транзакциям блокчейна;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://qri.io/">совместное хранение больших датасетов&lt;/a>;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>децентрализованный &lt;a href="https://d.tube/">видеохостинг&lt;/a> и &lt;a href="https://decentraland.org/">виртуальная реальност&lt;/a>ь;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>CDN;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://killcord.io/">Deadman Switch&lt;/a>;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/orbitdb/orbit-db">распределённая базы данных&lt;/a>;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://awesome.ipfs.io/">и многое другое&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Присоединяйтесь к становлению Распределённого Веба ✌️&lt;/p></content></item></channel></rss>
