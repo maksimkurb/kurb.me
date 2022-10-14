@@ -78,8 +78,8 @@ IPFS &amp;mdash; это пиринговая сеть хранения данн�
 &lt;/figure>
 &lt;p>Нам нужно подготовить статичную версию сайта, простой набор страничек. На этом этапе долго останавливаться не будем, &lt;a href="https://gohugo.io/getting-started/quick-start/">на данной странице&lt;/a> можно найти пошаговую инструкцию по созданию такого сайта с помощью генератора &lt;a href="https://gohugo.io/">Hugo&lt;/a> (&lt;a href="https://thecode.media/hugo/">а вот тут можно найти инструкцию на русском&lt;/a>).&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="453289761" type="checkbox" />
-&lt;label for="453289761">
+&lt;input id="954726831" type="checkbox" />
+&lt;label for="954726831">
 &lt;span class="collapsable-code__language">bash&lt;/span>
 &lt;span class="collapsable-code__title">Создаём заготовку статичного сайта&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽">&lt;/span>
