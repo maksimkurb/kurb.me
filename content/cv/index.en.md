@@ -13,9 +13,9 @@ Have 3 years of experience in commercial development on the Spring stack with mi
 * <img src="/img/email.png" alt="email icon" class="inline"> E-mail: [max@cubly.ru](mailto:max@cubly.ru)
 
 ## Technical skills
-* **Industry Knowledge**: Java, Spring Boot, JDBC, Hibernate, Kafka, JUnit, REST, WebSocket, Postgres, MySQL, Hazelcast, JavaScript, TypeScript, C#, HTML, CSS, Python, Redis
-* **Technical Skills**: IntelliJ IDEA, GitLab CI, Kubernetes, Maven, Gradle
-* **Soft skills**: Communication, Problem Solving, Time Management, Mentoring, Teamwork
+* **Industry Knowledge**: `Java`, `Spring Boot`, `JDBC`, `Hibernate`, `Kafka`, `JUnit`, `REST`, `WebSocket`, `Postgres`, `MySQL`, `Hazelcast`, `JavaScript`, `TypeScript`, `HTML`, `CSS`, `Python`, `Redis`, `C#`
+* **Technical Skills**: `IntelliJ IDEA`, `GitLab CI`, `Kubernetes`, `Maven`, `Gradle`
+* **Soft skills**: `Communication`, `Problem Solving`, `Time Management`, `Mentoring`, `Teamwork`
 
 ## Experience
 

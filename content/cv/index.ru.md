@@ -13,9 +13,9 @@ title: "Резюме (CV)"
 * <img src="/img/email.png" alt="email icon" class="inline"> E-mail: [max@cubly.ru](mailto:max@cubly.ru)
 
 ## Скиллы
-* **Знание отрасли**: Java, Spring Boot, JDBC, Hibernate, Kafka, JUnit, REST, WebSocket, Postgres, MySQL, Hazelcast, JavaScript, TypeScript, C#, HTML, CSS, Python, Redis
-* **Технические скиллы**: IntelliJ IDEA, GitLab CI, Kubernetes, Maven, Gradle
-* **Soft skills**: Коммуникация, Решение проблем и принятие решиений, Тайм-менеджмент, Менторинг, Работа в команде
+* **Знание отрасли**: `Java`, `Spring Boot`, `JDBC`, `Hibernate`, `Kafka`, `JUnit`, `REST`, `WebSocket`, `Postgres`, `MySQL`, `Hazelcast`, `JavaScript`, `TypeScript`, `HTML`, `CSS`, `Python`, `Redis`, `C#`
+* **Технические скиллы**: `IntelliJ IDEA`, `GitLab CI`, `Kubernetes`, `Maven`, `Gradle`
+* **Soft skills**: `Коммуникация`, `Решение проблем и принятие решиений`, `Тайм-менеджмент`, `Менторинг`, `Работа в команде`
 
 ## Опыт работы
 
