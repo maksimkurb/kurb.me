@@ -6,19 +6,16 @@ title: "Резюме (CV)"
 **Java developer**
 
 ## Сводка
-3 года опыта в коммерческой разработке на стеке Spring с микросервисной архитектурой. В основном работаю с реляционнами базами данных (MySQL, Postgres), но имею опыт работы и с NoSQL базами (Redis, MongoDB). Ранее работал с NodeJS в течение двух лет.
+3 года опыта в коммерческой разработке на стеке Spring с микросервисной архитектурой. Использую всю мощь Postgres, Kafka и Hazelcast для создания производительных, масштабируемых и отказоустойчивых систем. Ранее работал с Node JS в течение двух лет.
 
 ## Контакты
 * <img src="/img/telegram.png" alt="telegram logo" class="inline"> Telegram: [@maksimkurb](https://t.me/maksimkurb)
 * <img src="/img/email.png" alt="email icon" class="inline"> E-mail: [max@cubly.ru](mailto:max@cubly.ru)
 
 ## Скиллы
-* Языки программирования: `Java, TypeScript, JavaScript, C#, HTML, CSS, Python`
-* Платформы: `Windows, Linux, macOS`
-* Automation tools: `JUnit, Jest`
-* CI: `GitLab CI, Jenkins`
-* Базы данных: `Postgres, MySQL, MongoDB, Redis`
-* Issue Tracking: `Jira, Github, Notion😄`
+* **Знание отрасли**: Java, Spring Boot, JDBC, Hibernate, Kafka, JUnit, REST, WebSocket, Postgres, MySQL, Hazelcast, JavaScript, TypeScript, C#, HTML, CSS, Python, Redis
+* **Технические скиллы**: IntelliJ IDEA, GitLab CI, Kubernetes, Maven, Gradle
+* **Soft skills**: Коммуникация, Решение проблем и принятие решиений, Тайм-менеджмент, Менторинг, Работа в команде
 
 ## Опыт работы
 
@@ -28,34 +25,23 @@ title: "Резюме (CV)"
 Цифровая патология с искусственным интеллектом.
 
 **Мои достижения:**
-* Принимал активное участие в проектировании микросервисной архитектуры backend-части
-* Разделил огромный monorepo с модулями на независимые репозитории для обеспечения большей изолированности компонентов системы
+* Спроектировал и разработал MVP серверной части платформы за 2 месяца
+* Разделил огромный monorepo с модулями на 10 независимых репозиториев для обеспечения большей изолированности компонентов системы
   * Познакомился с инструментарием для переписывания истории GIT
-* Улучшил UX команды при работе с Notion в качестве средства для трекинга задач
-
-**Мои обязанности:**
-* Backend development
-  * Technical design
-  * Development
-  * Code review
-* Demo
-* Scrum methodology
+* Занимался наставничеством и обучением 3 коллег в команде
+* Прокачал рабочее пространство в Notion для удобства работы всей команды со своими задачами
 
 **Технологии:**
-*Java, Spring, Spring Boot, Kafka, Postgres, libVIPS, Python, GeoJSON, S3/MinIO*
+*Java, Spring, Spring Boot, Kafka, Postgres, Hazelcast, WebSockets, JUnit, MinIO, tus.io, libVIPS, Python*
 
-
+<!-- =================== -->
 > 09/2019 - 02/2020 :: Intern Java Developer, Grid Dynamics International, Inc
 
 Разработка системы пакетного аккумулирования клиентских данных из различных источников, их обработки и предоставления другим системам.
 
 **Обязанности:**
-* Backend development
-  * Technical design
-  * Development
-  * Code review
-  * Creation of test cases
-* Prepare demo-scripts and show demo (in English)
+* Backend development (Technical design, Development, Code review, Creating test cases)
+* Prepare demo-scripts and show demo
 * Scrum methodology
 
 **Технологии:**
@@ -67,18 +53,11 @@ title: "Резюме (CV)"
 Система для проверки физических и юридических лиц на различные факторы риска. Сервер собирает информацию из различных источников и генерирует отчёты по запросу оператора. Имеются API, работающие в режиме реального времени и в режиме обработки в очереди (долгие проверки).
 
 **Обязанности:**
-* Backend development
-  * Implement GraphQL API
-  * Third party service integration
-  * Billing service integration
-  * Documenting
-  * Implement OAuth provider
-* Frontend development
-  * Personal profile page
-  * React Native universal application (API client) (mobile & web)
+* Backend development (GraphQL API, Third-party service integration, Billing service integration, Documenting, OAuth provider implementation)
+* Frontend development (Personal profile page on backend, React Native App for making queries)
 
 **Технологии:**
-*NestJS, GraphQL, Redis, Queues, Postgres, TypeScript, React, React Native, Git, Jenkins, Jest, Postman, Json, Xml*
+*NestJS, GraphQL, Redis, Queues, Postgres, TypeScript, React, React Native, Jenkins, Jest*
 
 
 <!-- =================== -->
@@ -87,13 +66,12 @@ title: "Резюме (CV)"
 CRM для строительных компаний
 
 **Обязанности:**
-* Frontend development
-  * Develop web app on React stack
+* Frontend development (Web app on React stack)
 * Setting up Continuous Integration
 * Working with Kanban methodology
 
 **Технологии:**
-*React, Redux, Redux Saga, Reselect, Jest, NodeJS, Webpack, FeathersJS, Immutable JS, Git, Gitlab CI, Postman, Json, Shell*
+*React, Redux, Redux-Saga, Reselect, Jest, NodeJS, Webpack, FeathersJS, Immutable JS, Git, Gitlab CI, Postman, Json, Shell*
 
 
 <!-- =================== -->
@@ -102,7 +80,7 @@ CRM для строительных компаний
 Расписание школьных лекций на Android с веб-сайтом для удобного заполнения списка занятий и возможностью импорта занятий с сайта dnevnik.ru
 
 **Технологии:**
-*Meteor, FullCalendar.js, xlsx parsing, Android, Java, REST*
+*Meteor, Android, Java, REST, FullCalendar.js, xlsx parsing*
 
 
 <!-- =================== -->
@@ -115,7 +93,12 @@ CRM для строительных компаний
 
 
 ## Образование и сертификаты
-* 2017-2021 (неоконченное), Информатика и вычислительная техника, Саратовский государственный технический университет имени Гагарина Ю. А.
+* 2022-2023, Инфокоммуникации и цифровые медиа, Университет ИТМО
+* 2017-2021, Информатика и вычислительная техника, Саратовский государственный технический университет имени Гагарина Ю. А.
+* 2020, Aptech Certified Software Technology Specialist
+  * Certificate in Programming - CREDIT
+  * Diploma in Programming - DISTINCTION
+  * Advanced Diploma in Enterprise Applications - Java - DISTINCTION
 * 2019, Web Development with Java and Spring, GridU
 
 ## Языки
