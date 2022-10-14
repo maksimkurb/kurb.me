@@ -52,7 +52,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: personal-site-files
-          path: public
+          path: dist
  
       - uses: chrnorm/deployment-action@v2
         name: Create GitHub deployment
