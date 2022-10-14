@@ -6,7 +6,8 @@ on:
       - master
 
 jobs:
-  deploy:
+  build:
+    name: Build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
@@ -33,18 +34,69 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3
+        with:
+          name: personal-site-files
+          path: public
+
+  deploy:
+    name: Deploy & Publish
+    needs: build
+    runs-on: ubuntu-22.04
+    permissions:
+      deployments: write
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: personal-site-files
+          path: public
+ 
+      - uses: chrnorm/deployment-action@v2
+        name: Create GitHub deployment
+        id: deployment
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          environment: production
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./dist
           cname: cubly.ru
 
-      - name: Deploy to IPFS
-        env:
-          IPFS_DEPLOY_PINATA__API_KEY: ${{ secrets.IPFS_DEPLOY_PINATA__API_KEY }}
-          IPFS_DEPLOY_PINATA__SECRET_API_KEY: ${{ secrets.IPFS_DEPLOY_PINATA__SECRET_API_KEY }}
-          IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__API_TOKEN }}
-          IPFS_DEPLOY_CLOUDFLARE__ZONE: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__ZONE }}
-          IPFS_DEPLOY_CLOUDFLARE__RECORD: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__RECORD }}
-        run: for run in {1..10}; do npm run deploy:ipfs && break; done
+      - name: Deploy to Web3
+        uses: pawanpaudel93/add-to-web3@v0.1
+        id: web3
+        with:
+          web3_token: ${{ secrets.WEB3_STORAGE_TOKEN }}
+          path_to_add: "dist"
+          service: "web3.storage"
+
+      - name: Publish revision to w3name
+        uses: pawanpaudel93/w3name-action@v0.1
+        id: publish
+        with:
+          cid: ${{ steps.web3.outputs.cid }}
+          signing_key: ${{ secrets.W3NAME_SIGNING_KEY }}
+
+      - name: Update deployment status (success)
+        if: success()
+        uses: chrnorm/deployment-status@v2
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          environment-url: ${{ steps.publish.outputs.url }}
+          state: "success"
+          deployment-id: ${{ steps.deployment.outputs.deployment_id }}
+
+      - name: Update deployment status (failure)
+        if: failure()
+        uses: chrnorm/deployment-status@v2
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          environment-url: ${{ steps.web3.publish.url }}
+          state: "failure"
+          deployment-id: ${{ steps.deployment.outputs.deployment_id }}
