@@ -78,8 +78,8 @@ IPFS &amp;mdash; это пиринговая сеть хранения данн�
 &lt;/figure>
 &lt;p>Нам нужно подготовить статичную версию сайта, простой набор страничек. На этом этапе долго останавливаться не будем, &lt;a href="https://gohugo.io/getting-started/quick-start/">на данной странице&lt;/a> можно найти пошаговую инструкцию по созданию такого сайта с помощью генератора &lt;a href="https://gohugo.io/">Hugo&lt;/a> (&lt;a href="https://thecode.media/hugo/">а вот тут можно найти инструкцию на русском&lt;/a>).&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="268345179" type="checkbox" />
-&lt;label for="268345179">
+&lt;input id="728163495" type="checkbox" />
+&lt;label for="728163495">
 &lt;span class="collapsable-code__language">bash&lt;/span>
 &lt;span class="collapsable-code__title">Создаём заготовку статичного сайта&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽">&lt;/span>
@@ -199,11 +199,11 @@ hugo serve
 &lt;/li>
 &lt;/ul>
 &lt;p>Присоединяйтесь к становлению Распределённого Веба ✌️&lt;/p></content></item><item><title>Резюме (CV)</title><link>https://cubly.ru/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cubly.ru/cv/</guid><description>Maxim Kurbatov Java developer
-Сводка 3 года опыта в коммерческой разработке на стеке Spring с микросервисной архитектурой. В основном работаю с реляционнами базами данных (MySQL, Postgres), но имею опыт работы и с NoSQL базами (Redis, MongoDB). Ранее работал с NodeJS в течение двух лет.
-Контакты Telegram: @maksimkurb E-mail: max@cubly.ru Скиллы Языки программирования: Java, TypeScript, JavaScript, C#, HTML, CSS, Python Платформы: Windows, Linux, macOS Automation tools: JUnit, Jest CI: GitLab CI, Jenkins Базы данных: Postgres, MySQL, MongoDB, Redis Issue Tracking: Jira, Github, Notion😄 Опыт работы 08/2020 - сейчас :: Java Developer, OneCell.</description><content>&lt;h1 id="maxim-kurbatov">Maxim Kurbatov&lt;/h1>
+Сводка 3 года опыта в коммерческой разработке на стеке Spring с микросервисной архитектурой. Использую всю мощь Postgres, Kafka и Hazelcast для создания производительных, масштабируемых и отказоустойчивых систем. Ранее работал с Node JS в течение двух лет.
+Контакты Telegram: @maksimkurb E-mail: max@cubly.ru Скиллы Знание отрасли: Java, Spring Boot, JDBC, Hibernate, Kafka, JUnit, REST, WebSocket, Postgres, MySQL, Hazelcast, JavaScript, TypeScript, C#, HTML, CSS, Python, Redis Технические скиллы: IntelliJ IDEA, GitLab CI, Kubernetes, Maven, Gradle Soft skills: Коммуникация, Решение проблем и принятие решиений, Тайм-менеджмент, Менторинг, Работа в команде Опыт работы 08/2020 - сейчас :: Java Developer, OneCell.</description><content>&lt;h1 id="maxim-kurbatov">Maxim Kurbatov&lt;/h1>
 &lt;p>&lt;strong>Java developer&lt;/strong>&lt;/p>
 &lt;h2 id="сводка">Сводка&lt;/h2>
-&lt;p>3 года опыта в коммерческой разработке на стеке Spring с микросервисной архитектурой. В основном работаю с реляционнами базами данных (MySQL, Postgres), но имею опыт работы и с NoSQL базами (Redis, MongoDB). Ранее работал с NodeJS в течение двух лет.&lt;/p>
+&lt;p>3 года опыта в коммерческой разработке на стеке Spring с микросервисной архитектурой. Использую всю мощь Postgres, Kafka и Hazelcast для создания производительных, масштабируемых и отказоустойчивых систем. Ранее работал с Node JS в течение двух лет.&lt;/p>
 &lt;h2 id="контакты">Контакты&lt;/h2>
 &lt;ul>
 &lt;li>&lt;img src="./img/telegram.png" alt="telegram logo" class="inline"> Telegram: &lt;a href="https://t.me/maksimkurb">@maksimkurb&lt;/a>&lt;/li>
@@ -211,12 +211,9 @@ hugo serve
 &lt;/ul>
 &lt;h2 id="скиллы">Скиллы&lt;/h2>
 &lt;ul>
-&lt;li>Языки программирования: &lt;code>Java, TypeScript, JavaScript, C#, HTML, CSS, Python&lt;/code>&lt;/li>
-&lt;li>Платформы: &lt;code>Windows, Linux, macOS&lt;/code>&lt;/li>
-&lt;li>Automation tools: &lt;code>JUnit, Jest&lt;/code>&lt;/li>
-&lt;li>CI: &lt;code>GitLab CI, Jenkins&lt;/code>&lt;/li>
-&lt;li>Базы данных: &lt;code>Postgres, MySQL, MongoDB, Redis&lt;/code>&lt;/li>
-&lt;li>Issue Tracking: &lt;code>Jira, Github, Notion😄&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Знание отрасли&lt;/strong>: Java, Spring Boot, JDBC, Hibernate, Kafka, JUnit, REST, WebSocket, Postgres, MySQL, Hazelcast, JavaScript, TypeScript, C#, HTML, CSS, Python, Redis&lt;/li>
+&lt;li>&lt;strong>Технические скиллы&lt;/strong>: IntelliJ IDEA, GitLab CI, Kubernetes, Maven, Gradle&lt;/li>
+&lt;li>&lt;strong>Soft skills&lt;/strong>: Коммуникация, Решение проблем и принятие решиений, Тайм-менеджмент, Менторинг, Работа в команде&lt;/li>
 &lt;/ul>
 &lt;h2 id="опыт-работы">Опыт работы&lt;/h2>
 &lt;!-- =================== -->
@@ -226,43 +223,26 @@ hugo serve
 &lt;p>Цифровая патология с искусственным интеллектом.&lt;/p>
 &lt;p>&lt;strong>Мои достижения:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Принимал активное участие в проектировании микросервисной архитектуры backend-части&lt;/li>
-&lt;li>Разделил огромный monorepo с модулями на независимые репозитории для обеспечения большей изолированности компонентов системы
+&lt;li>Спроектировал и разработал MVP серверной части платформы за 2 месяца&lt;/li>
+&lt;li>Разделил огромный monorepo с модулями на 10 независимых репозиториев для обеспечения большей изолированности компонентов системы
 &lt;ul>
 &lt;li>Познакомился с инструментарием для переписывания истории GIT&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Улучшил UX команды при работе с Notion в качестве средства для трекинга задач&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Мои обязанности:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Backend development
-&lt;ul>
-&lt;li>Technical design&lt;/li>
-&lt;li>Development&lt;/li>
-&lt;li>Code review&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Demo&lt;/li>
-&lt;li>Scrum methodology&lt;/li>
+&lt;li>Занимался наставничеством и обучением 3 коллег в команде&lt;/li>
+&lt;li>Прокачал рабочее пространство в Notion для удобства работы всей команды со своими задачами&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Технологии:&lt;/strong>
-&lt;em>Java, Spring, Spring Boot, Kafka, Postgres, libVIPS, Python, GeoJSON, S3/MinIO&lt;/em>&lt;/p>
+&lt;em>Java, Spring, Spring Boot, Kafka, Postgres, Hazelcast, WebSockets, JUnit, MinIO, tus.io, libVIPS, Python&lt;/em>&lt;/p>
+&lt;!-- =================== -->
 &lt;blockquote>
 &lt;p>09/2019 - 02/2020 :: Intern Java Developer, Grid Dynamics International, Inc&lt;/p>
 &lt;/blockquote>
 &lt;p>Разработка системы пакетного аккумулирования клиентских данных из различных источников, их обработки и предоставления другим системам.&lt;/p>
 &lt;p>&lt;strong>Обязанности:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Backend development
-&lt;ul>
-&lt;li>Technical design&lt;/li>
-&lt;li>Development&lt;/li>
-&lt;li>Code review&lt;/li>
-&lt;li>Creation of test cases&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Prepare demo-scripts and show demo (in English)&lt;/li>
+&lt;li>Backend development (Technical design, Development, Code review, Creating test cases)&lt;/li>
+&lt;li>Prepare demo-scripts and show demo&lt;/li>
 &lt;li>Scrum methodology&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Технологии:&lt;/strong>
@@ -274,24 +254,11 @@ hugo serve
 &lt;p>Система для проверки физических и юридических лиц на различные факторы риска. Сервер собирает информацию из различных источников и генерирует отчёты по запросу оператора. Имеются API, работающие в режиме реального времени и в режиме обработки в очереди (долгие проверки).&lt;/p>
 &lt;p>&lt;strong>Обязанности:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Backend development
-&lt;ul>
-&lt;li>Implement GraphQL API&lt;/li>
-&lt;li>Third party service integration&lt;/li>
-&lt;li>Billing service integration&lt;/li>
-&lt;li>Documenting&lt;/li>
-&lt;li>Implement OAuth provider&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Frontend development
-&lt;ul>
-&lt;li>Personal profile page&lt;/li>
-&lt;li>React Native universal application (API client) (mobile &amp;amp; web)&lt;/li>
-&lt;/ul>
-&lt;/li>
+&lt;li>Backend development (GraphQL API, Third-party service integration, Billing service integration, Documenting, OAuth provider implementation)&lt;/li>
+&lt;li>Frontend development (Personal profile page on backend, React Native App for making queries)&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Технологии:&lt;/strong>
-&lt;em>NestJS, GraphQL, Redis, Queues, Postgres, TypeScript, React, React Native, Git, Jenkins, Jest, Postman, Json, Xml&lt;/em>&lt;/p>
+&lt;em>NestJS, GraphQL, Redis, Queues, Postgres, TypeScript, React, React Native, Jenkins, Jest&lt;/em>&lt;/p>
 &lt;!-- =================== -->
 &lt;blockquote>
 &lt;p>09/2018 – 11/2018 :: Frontend Developer, LIS Ltd&lt;/p>
@@ -299,23 +266,19 @@ hugo serve
 &lt;p>CRM для строительных компаний&lt;/p>
 &lt;p>&lt;strong>Обязанности:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Frontend development
-&lt;ul>
-&lt;li>Develop web app on React stack&lt;/li>
-&lt;/ul>
-&lt;/li>
+&lt;li>Frontend development (Web app on React stack)&lt;/li>
 &lt;li>Setting up Continuous Integration&lt;/li>
 &lt;li>Working with Kanban methodology&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Технологии:&lt;/strong>
-&lt;em>React, Redux, Redux Saga, Reselect, Jest, NodeJS, Webpack, FeathersJS, Immutable JS, Git, Gitlab CI, Postman, Json, Shell&lt;/em>&lt;/p>
+&lt;em>React, Redux, Redux-Saga, Reselect, Jest, NodeJS, Webpack, FeathersJS, Immutable JS, Git, Gitlab CI, Postman, Json, Shell&lt;/em>&lt;/p>
 &lt;!-- =================== -->
 &lt;blockquote>
 &lt;p>2017 :: Individual project development&lt;/p>
 &lt;/blockquote>
 &lt;p>Расписание школьных лекций на Android с веб-сайтом для удобного заполнения списка занятий и возможностью импорта занятий с сайта dnevnik.ru&lt;/p>
 &lt;p>&lt;strong>Технологии:&lt;/strong>
-&lt;em>Meteor, FullCalendar.js, xlsx parsing, Android, Java, REST&lt;/em>&lt;/p>
+&lt;em>Meteor, Android, Java, REST, FullCalendar.js, xlsx parsing&lt;/em>&lt;/p>
 &lt;!-- =================== -->
 &lt;blockquote>
 &lt;p>2016 :: Sartax.ru&lt;/p>
@@ -325,7 +288,15 @@ hugo serve
 &lt;em>PHP, REST, Laravel, JavaScript, Bootstrap, GPS, Google Maps&lt;/em>&lt;/p>
 &lt;h2 id="образование-и-сертификаты">Образование и сертификаты&lt;/h2>
 &lt;ul>
-&lt;li>2017-2021 (неоконченное), Информатика и вычислительная техника, Саратовский государственный технический университет имени Гагарина Ю. А.&lt;/li>
+&lt;li>2022-2023, Инфокоммуникации и цифровые медиа, Университет ИТМО&lt;/li>
+&lt;li>2017-2021, Информатика и вычислительная техника, Саратовский государственный технический университет имени Гагарина Ю. А.&lt;/li>
+&lt;li>2020, Aptech Certified Software Technology Specialist
+&lt;ul>
+&lt;li>Certificate in Programming - CREDIT&lt;/li>
+&lt;li>Diploma in Programming - DISTINCTION&lt;/li>
+&lt;li>Advanced Diploma in Enterprise Applications - Java - DISTINCTION&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>2019, Web Development with Java and Spring, GridU&lt;/li>
 &lt;/ul>
 &lt;h2 id="языки">Языки&lt;/h2>
