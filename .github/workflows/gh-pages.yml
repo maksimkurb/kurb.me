@@ -1,4 +1,4 @@
-name: Deploy website to IPFS and GitHub Pages
+name: Build and deploy website
 
 on:
   push:
@@ -44,9 +44,6 @@ jobs:
     name: Deploy & Publish
     needs: build
     runs-on: ubuntu-22.04
-    permissions:
-      deployments: write
-
     steps:
       - uses: actions/checkout@v2
 
