@@ -78,8 +78,8 @@ IPFS &amp;mdash; это пиринговая сеть хранения данн�
 &lt;/figure>
 &lt;p>Нам нужно подготовить статичную версию сайта, простой набор страничек. На этом этапе долго останавливаться не будем, &lt;a href="https://gohugo.io/getting-started/quick-start/">на данной странице&lt;/a> можно найти пошаговую инструкцию по созданию такого сайта с помощью генератора &lt;a href="https://gohugo.io/">Hugo&lt;/a> (&lt;a href="https://thecode.media/hugo/">а вот тут можно найти инструкцию на русском&lt;/a>).&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="942173568" type="checkbox" />
-&lt;label for="942173568">
+&lt;input id="186325479" type="checkbox" />
+&lt;label for="186325479">
 &lt;span class="collapsable-code__language">bash&lt;/span>
 &lt;span class="collapsable-code__title">Создаём заготовку статичного сайта&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽">&lt;/span>
@@ -198,9 +198,10 @@ hugo serve
 &lt;p>&lt;a href="https://awesome.ipfs.io/">и многое другое&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>Присоединяйтесь к становлению Распределённого Веба ✌️&lt;/p></content></item><item><title>Резюме (CV)</title><link>https://cubly.ru/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cubly.ru/cv/</guid><description>Maxim Kurbatov Java developer
+&lt;p>Присоединяйтесь к становлению Распределённого Веба ✌️&lt;/p></content></item><item><title>Резюме (CV)</title><link>https://cubly.ru/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cubly.ru/cv/</guid><description>Скачать резюме в формате PDF Maxim Kurbatov Java developer
 Сводка 3 года опыта в коммерческой разработке на стеке Spring с микросервисной архитектурой. Использую всю мощь Postgres, Kafka и Hazelcast для создания производительных, масштабируемых и отказоустойчивых систем. Ранее работал с Node JS в течение двух лет.
-Контакты Telegram: @maksimkurb E-mail: max@cubly.ru Скиллы Знание отрасли: Java, Spring Boot, JDBC, Hibernate, Kafka, JUnit, REST, WebSocket, Postgres, MySQL, Hazelcast, JavaScript, TypeScript, HTML, CSS, Python, Redis, C# Технические скиллы: IntelliJ IDEA, GitLab CI, Kubernetes, Maven, Gradle Soft skills: Коммуникация, Решение проблем и принятие решиений, Тайм-менеджмент, Менторинг, Работа в команде Опыт работы 08/2020 - сейчас :: Java Developer, OneCell.</description><content>&lt;h1 id="maxim-kurbatov">Maxim Kurbatov&lt;/h1>
+Контакты Telegram: @maksimkurb E-mail: max@cubly.ru Скиллы Знание отрасли: Java, Spring Boot, JDBC, Hibernate, Kafka, JUnit, REST, WebSocket, Postgres, MySQL, Hazelcast, JavaScript, TypeScript, HTML, CSS, Python, Redis, C# Технические скиллы: IntelliJ IDEA, GitLab CI, Kubernetes, Maven, Gradle Soft skills: Коммуникация, Решение проблем и принятие решиений, Тайм-менеджмент, Менторинг, Работа в команде Опыт работы 08/2020 - сейчас :: Java Developer, OneCell.</description><content>&lt;div style="max-width:400px;margin:0 auto">&lt;a href="./resume.pdf" target="_blank" class="button outline">Скачать резюме в формате PDF&lt;/a>&lt;/div>
+&lt;h1 id="maxim-kurbatov">Maxim Kurbatov&lt;/h1>
 &lt;p>&lt;strong>Java developer&lt;/strong>&lt;/p>
 &lt;h2 id="сводка">Сводка&lt;/h2>
 &lt;p>3 года опыта в коммерческой разработке на стеке Spring с микросервисной архитектурой. Использую всю мощь Postgres, Kafka и Hazelcast для создания производительных, масштабируемых и отказоустойчивых систем. Ранее работал с Node JS в течение двух лет.&lt;/p>
@@ -211,9 +212,9 @@ hugo serve
 &lt;/ul>
 &lt;h2 id="скиллы">Скиллы&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Знание отрасли&lt;/strong>: &lt;code>Java&lt;/code>, &lt;code>Spring Boot&lt;/code>, &lt;code>JDBC&lt;/code>, &lt;code>Hibernate&lt;/code>, &lt;code>Kafka&lt;/code>, &lt;code>JUnit&lt;/code>, &lt;code>REST&lt;/code>, &lt;code>WebSocket&lt;/code>, &lt;code>Postgres&lt;/code>, &lt;code>MySQL&lt;/code>, &lt;code>Hazelcast&lt;/code>, &lt;code>JavaScript&lt;/code>, &lt;code>TypeScript&lt;/code>, &lt;code>HTML&lt;/code>, &lt;code>CSS&lt;/code>, &lt;code>Python&lt;/code>, &lt;code>Redis&lt;/code>, &lt;code>C#&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Технические скиллы&lt;/strong>: &lt;code>IntelliJ IDEA&lt;/code>, &lt;code>GitLab CI&lt;/code>, &lt;code>Kubernetes&lt;/code>, &lt;code>Maven&lt;/code>, &lt;code>Gradle&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Soft skills&lt;/strong>: &lt;code>Коммуникация&lt;/code>, &lt;code>Решение проблем и принятие решиений&lt;/code>, &lt;code>Тайм-менеджмент&lt;/code>, &lt;code>Менторинг&lt;/code>, &lt;code>Работа в команде&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Знание отрасли&lt;/strong>: &lt;code>Java, Spring Boot, JDBC, Hibernate, Kafka, JUnit, REST, WebSocket, Postgres, MySQL, Hazelcast, JavaScript, TypeScript, HTML, CSS, Python, Redis, C#&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Технические скиллы&lt;/strong>: &lt;code>IntelliJ IDEA, GitLab CI, Kubernetes, Maven, Gradle&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Soft skills&lt;/strong>: &lt;code>Коммуникация, Решение проблем и принятие решиений, Тайм-менеджмент, Менторинг, Работа в команде&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;h2 id="опыт-работы">Опыт работы&lt;/h2>
 &lt;!-- =================== -->
@@ -303,4 +304,5 @@ hugo serve
 &lt;ul>
 &lt;li>Английский - B2&lt;/li>
 &lt;li>Русский - родной язык&lt;/li>
-&lt;/ul></content></item></channel></rss>
+&lt;/ul>
+&lt;p>&lt;a style="margin-top:2em" href="./resume.pdf" target="_blank" class="button primary">Скачать резюме в формате PDF&lt;/a>&lt;/p></content></item></channel></rss>
