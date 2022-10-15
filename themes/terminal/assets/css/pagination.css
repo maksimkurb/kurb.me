@@ -15,12 +15,16 @@
       text-align: center;
       margin: 0 auto;
       padding: 5px 10px;
-      background: color-mod(var(--accent) blend(#1D1E28 98%));
       font-size: .8rem;
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: .1em;
       z-index: 1;
+      
+      background: color-mod(var(--accent) blend(#1D1E28 98%));
+      @media screen and (prefers-color-scheme: light) {
+        background: color-mod(var(--accent-light) blend(#c7c8d6 75%));
+      }
     }
 
     hr {

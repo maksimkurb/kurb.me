@@ -24,18 +24,36 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
 
+  background-image: url(/images/background.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
   @media (--phone) {
     font-size: 1rem;
   }
 
   @media print {
     background-color: #fff;
+    background-image: none;
     color: #000;
   }
 
   @media screen and (prefers-color-scheme: light) {
     background-color: var(--background-light);
     color: var(--color-light);
+  }
+}
+
+.container.center, .container.full {
+  background-color: color-mod(var(--accent) blend(#1D1E28 98%));
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  
+  @media screen and (prefers-color-scheme: light) {
+    background-color: var(--background-light);
+    border-left: 1px solid var(--border-color-light);
+    border-right: 1px solid var(--border-color-light);
   }
 }
 
@@ -327,7 +345,6 @@ mark {
 
   &.full,
   &.center {
-    border: none;
     margin: 0 auto;
   }
 

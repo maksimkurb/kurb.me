@@ -2,6 +2,7 @@
   "scripts": {
     "hugo": "hugo",
     "build": "hugo --minify",
+    "dev": "hugo server",
     "deploy:ipfs": "ipfs-deploy -p pinata -d cloudflare public/"
   },
   "browserslist": [

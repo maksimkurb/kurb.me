@@ -22,8 +22,21 @@
 .post {
   width: 100%;
   text-align: left;
-  margin: 20px auto;
-  padding: 20px 0;
+  margin: 20px auto 0;
+  padding: 20px 0 0;
+
+  &::after {
+    content: " ";
+    display: block;
+    margin-top: 20px;
+    margin-left: -40px;
+    margin-right: -40px;
+
+    border-bottom: 1px solid var(--border-color);
+    @media screen and (prefers-color-scheme: light) {
+      border-bottom: 1px solid var(--border-color-light);
+    }
+  }
 
   @media (--tablet) {
     max-width: 660px;
@@ -48,7 +61,7 @@
     --border-light: 3px dotted var(--accent-light);
     position: relative;
     color: var(--accent);
-    margin: 0 0 15px;
+    margin: 0 0 15px !important;
     padding-bottom: 15px;
     border-bottom: var(--border);
 
