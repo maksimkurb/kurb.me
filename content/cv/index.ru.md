@@ -2,6 +2,8 @@
 title: "Резюме (CV)"
 ---
 
+<div style="max-width:400px;margin:0 auto"><a href="/resume.pdf" target="_blank" class="button outline">Скачать резюме в формате PDF</a></div>
+
 # Maxim Kurbatov
 **Java developer**
 
@@ -104,3 +106,5 @@ CRM для строительных компаний
 ## Языки
 * Английский - B2
 * Русский - родной язык
+
+<a style="margin-top:2em" href="/resume.pdf" target="_blank" class="button primary">Скачать резюме в формате PDF</a>

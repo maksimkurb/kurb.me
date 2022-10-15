@@ -2,6 +2,8 @@
 title: "CV"
 ---
 
+<div style="max-width:400px;margin:0 auto"><a href="/resume.pdf" target="_blank" class="button outline">Download resume in PDF format</a></div>
+
 # Maxim Kurbatov
 **Java developer**
 
@@ -104,3 +106,6 @@ Interactive map (using Google Maps) with taxi drivers, their prices and total ca
 ## Languages
 * English - B2
 * Russian - native speaker
+
+
+<a style="margin-top:2em" href="/resume.pdf" target="_blank" class="button primary">Download resume in PDF format</a>
