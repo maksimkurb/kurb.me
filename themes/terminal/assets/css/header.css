@@ -21,17 +21,11 @@
   flex-direction: column;
   position: relative;
   
-  &::after {
-    content: " ";
-    display: block;
-    margin-top: 20px;
-    margin-left: -40px;
-    margin-right: -40px;
-
-    border-bottom: 1px solid var(--border-color);
-    @media screen and (prefers-color-scheme: light) {
-      border-bottom: 1px solid var(--border-color-light);
-    }
+  padding-bottom: 20px;
+  
+  border-bottom: 1px solid var(--border-color);
+  @media screen and (prefers-color-scheme: light) {
+    border-bottom: 1px solid var(--border-color-light);
   }
 
   @media print {
@@ -42,6 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 40px;
   }
 
   &__logo {
@@ -76,7 +71,7 @@
     --margin: 15px;
     --margin-negative: -15px;
 
-    margin: 20px 0;
+    margin: 20px 40px;
 
     @media (--phone) {
       @mixin menu;

@@ -1,5 +1,5 @@
 .footer {
-  padding: 40px 0;
+  padding: 20px 0;
   flex-grow: 0;
   opacity: .5;
 
@@ -8,8 +8,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    width: 760px;
-    max-width: 100%;
 
     @media (--tablet) {
       flex-direction: column;

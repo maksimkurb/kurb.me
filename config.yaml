@@ -2,7 +2,7 @@ baseUrl: https://cubly.ru/
 languageCode: ru-ru
 defaultContentLanguage: ru
 theme: terminal
-paginate: 5
+paginate: 1
 relativeURLs: true
 
 googleAnalytics: UA-44581121-8
@@ -37,6 +37,8 @@ languages:
     readMore: Читать далее
     readOtherPosts: Читать другие публикации
     minRead: мин. на чтение
+    newerPosts: Новые статьи
+    olderPosts: Предыдущие статьи
 
     params:
       logo:

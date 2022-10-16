@@ -23,27 +23,11 @@
   width: 100%;
   text-align: left;
   margin: 20px auto 0;
-  padding: 20px 0 0;
+  padding: 20px 40px;
 
-  &::after {
-    content: " ";
-    display: block;
-    margin-top: 20px;
-    margin-left: -40px;
-    margin-right: -40px;
-
-    border-bottom: 1px solid var(--border-color);
-    @media screen and (prefers-color-scheme: light) {
-      border-bottom: 1px solid var(--border-color-light);
-    }
-  }
-
-  @media (--tablet) {
-    max-width: 660px;
-  }
-
-  &:not(:last-of-type) {
-    border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  @media screen and (prefers-color-scheme: light) {
+    border-bottom: 1px solid var(--border-color-light);
   }
 
   &-meta {
