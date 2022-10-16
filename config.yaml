@@ -100,7 +100,7 @@ languages:
 
     params:
       logo:
-        logoText: Cubly
+        logoText: "@maksimkurb"
         logoHomeLink: /
 
 
