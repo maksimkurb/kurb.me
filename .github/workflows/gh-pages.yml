@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Build
-        run: npm run build
+        run: hugo --minify
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
