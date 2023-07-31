@@ -1,8 +1,8 @@
 ---
 date: 2019-08-01T00:00:00+01:00
 draft: false
-title: "Intern Java Developer - Grid Dynamics"
-jobTitle: "Intern Java Developer"
+title: "Java Developer - Grid Dynamics"
+jobTitle: "Java Developer"
 company: "Grid Dynamics"
 location: "Saratov, Russia"
 duration: "08/2019-02/2020"
