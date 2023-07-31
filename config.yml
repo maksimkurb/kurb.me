@@ -12,6 +12,8 @@ enableEmoji: true
 pygmentsUseClasses: true
 googleAnalytics: G-5GYQMRLRB3
 
+relativeURLs: true
+
 mainSections:
   - post
 
@@ -109,7 +111,7 @@ params:
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
-    images: ["papermod-cover.png"]
+    images: ["cover.png"]
 
     profileMode:
         enabled: true
