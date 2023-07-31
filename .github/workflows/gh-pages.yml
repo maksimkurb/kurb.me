@@ -53,7 +53,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: cubly.ru
+          cname: kurb.me
 
       - name: Deploy to Web3
         uses: pawanpaudel93/add-to-web3@v0.1
