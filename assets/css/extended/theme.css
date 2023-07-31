@@ -103,3 +103,15 @@ hr {
   background: var(--border);
   border: 0;
 }
+
+@media (max-width: 968px) {
+  body .header {
+    padding-top: 0;
+  }
+
+  body .header nav, body .main {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  
+}

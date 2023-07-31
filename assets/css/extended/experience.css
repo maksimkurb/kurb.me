@@ -115,7 +115,7 @@
   font-size: 24px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 968px) {
   #experience {
     flex-direction: column-reverse;
   }
@@ -128,6 +128,19 @@
   #experience .selector {
     margin-right: 0;
     margin-top: 3em;
+  }
+
+  .education-row {
+    flex-direction: column;
+  }
+
+  .education-item::before {
+    content: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
   }
 }
 
@@ -148,7 +161,6 @@
 
 #contact-me .contacts img {
   border-radius: var(--radius);
-  max-width: 30%;
   height: 300px;
   margin-right: 1em;
 }
@@ -160,4 +172,10 @@
 
 #contact-me p {
   margin-bottom: 0.6em;
+}
+
+@media (max-width: 800px) {
+  #contact-me .contacts img {
+    display: none;
+  }
 }
