@@ -1,1 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://cubly.ru/en/sitemap.xml</loc></sitemap><sitemap><loc>https://cubly.ru/ru/sitemap.xml</loc><lastmod>2021-11-17T00:00:00+00:00</lastmod></sitemap></sitemapindex>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kurb.me/cv/</loc>
+    <lastmod>2023-07-28T16:41:15+05:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/experience/</loc>
+    <lastmod>2022-05-01T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/</loc>
+    <lastmod>2022-05-01T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/experience/5_onecell/</loc>
+    <lastmod>2022-05-01T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/experience/4_onecell/</loc>
+    <lastmod>2020-08-01T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/experience/3_grid_dynamics/</loc>
+    <lastmod>2019-08-01T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/experience/2_busstab/</loc>
+    <lastmod>2018-12-01T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/experience/1_sartax/</loc>
+    <lastmod>2016-01-01T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/archives/</loc>
+  </url><url>
+    <loc>https://kurb.me/categories/</loc>
+  </url><url>
+    <loc>https://kurb.me/search/</loc>
+  </url><url>
+    <loc>https://kurb.me/series/</loc>
+  </url><url>
+    <loc>https://kurb.me/tags/</loc>
+  </url>
+</urlset>

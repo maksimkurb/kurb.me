@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Maxim Kurbatov</title>
-    <link>https://kurb.me/</link>
-    <description>Recent content on Maxim Kurbatov</description>
+    <title>Experience on Maxim Kurbatov</title>
+    <link>https://kurb.me/experience/</link>
+    <description>Recent content in Experience on Maxim Kurbatov</description>
     <image>
       <title>Maxim Kurbatov</title>
       <url>https://kurb.me/papermod-cover.png</url>
@@ -11,16 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 May 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://kurb.me/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cv</title>
-      <link>https://kurb.me/cv/</link>
-      <pubDate>Fri, 28 Jul 2023 16:41:15 +0500</pubDate>
-      
-      <guid>https://kurb.me/cv/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 01 May 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://kurb.me/experience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Senior Java Developer - OneCell</title>
       <link>https://kurb.me/experience/5_onecell/</link>
@@ -74,8 +65,6 @@ Bank security team used that app to check individuals before approving loan issu
 I designed and built an interactive map (based on Google Maps) with taxi drivers, their prices and total calculation. Also implemented a taxi driver panel with meter and GPS tracker.
 Customers are supposed to open a website, choose nearest taxi-driver, see if full price is OK for them and call the driver directly.</description>
     </item>
-    
-    
     
   </channel>
 </rss>
