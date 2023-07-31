@@ -1,0 +1,235 @@
+baseURL: "https://kurb.me/"
+title: Maxim Kurbatov
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+googleAnalytics: G-5GYQMRLRB3
+
+mainSections:
+  - post
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                # - name: Archive
+                #   url: archives
+                #   weight: 5
+                # - name: Search
+                #   url: search/
+                #   weight: 10
+                # - name: Tags
+                #   url: tags/
+                #   weight: 10
+                - name: My CV
+                  url: /cv.pdf
+                  weight: 10
+                - name: GitHub
+                  url: https://github.com/maksimkurb/
+                - name: LinkedIn
+                  url: https://www.linkedin.com/in/maxim-kurbatov/
+
+    # fr:
+    #     languageName: ":fr:"
+    #     languageAltTitle: French
+    #     weight: 2
+    #     title: PaperModL2
+    #     taxonomies:
+    #       category: FRcategories
+    #       tag: FRtags
+    #       series: FRseries
+    #     profileMode:
+    #         enabled: true
+    #         title: PaperMod
+    #         imageUrl: "https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f317.svg"
+    #         imageTitle: ProfileMode image
+    #         # imageWidth: 120
+    #         # imageHeight: 120
+    #         subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+    #         buttons:
+    #             - name: Blog
+    #               url: posts
+    #             - name: Profile Mode
+    #               url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+    #     menu:
+    #         main:
+    #             - name: Archive
+    #               url: archives/
+    #               weight: 5
+    #             - name: FRTags
+    #               url: frtags
+    #               weight: 10
+    #             - name: FRCategories
+    #               url: frcategories
+    #               weight: 10
+    #             - name: FRSeries
+    #               url: frseries
+    #               weight: 10
+    #             - name: NullLink
+    #               url: "#"
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Maxim Kurbatov's Personal Website"
+    author: Maxim Kurbatov
+    # author: ["Me", "You"] # multiple authors
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    # comments: false
+    images: ["papermod-cover.png"]
+
+    profileMode:
+        enabled: true
+        # title: PaperMod
+        imageUrl: "/images/maxim2.jpg"
+        imageTitle: Maxim Kurbatov
+        imageWidth: 280
+        imageHeight: 280
+        linkedIn: "https://www.linkedin.com/in/maxim-kurbatov/"
+        contactMe:
+          - name: Email
+            link: mailto:maxim@kurb.me
+            caption: maxim@kurb.me
+          - name: LinkedIn
+            link: "https://www.linkedin.com/in/maxim-kurbatov/"
+            caption: "in/maxim-kurbatov"
+          - name: Telegram
+            link: "https://t.me/maksimkurb"
+            caption: "@maksimkurb"
+        buttons:
+            - name: Archives
+              url: archives
+            - name: Tags
+              url: tags
+        Title: >
+          Hello, I'm Maxim.
+          
+          <div style="font-weight: normal">Java Developer</div>
+        Content: >
+            I work as a lead Java Developer at [OneCell](https://www.onecell.ai/en), digital pathology platform driven by AI.
+            My background is diverse and I have [experience](/experience) in various fields related to digital technology.
+            I have worked on backend & frontend development, coaching and a bit of devops.
+            I am huge automation fan as it helps optimize processes and avoid repetitive work.
+            My hobbies are traveling, home automation and tinkering with IoT hardware.
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/maksimkurb"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/maxim-kurbatov/"
+        - name: facebook
+          url: "https://facebook.com/kurb.me"
+        - name: instagram
+          url: "https://instagram.com/kurb.me"
+        - name: telegram
+          url: "https://t.me/maksimkurb"
+        - name: email
+          url: "mailto:maxim@kurb.me"
+        - name: Rss
+          url: "index.xml"
+
+    editPost:
+        URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    label:
+        text: >
+          <span class="title-primary">Maxim</span><span class="space"> </span><span class="title-secondary">Kurbatov</span>
+    #     icon: icon.png
+    #     iconHeight: 35
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+
+    assets:
+        disableHLJS: true
+    #     favicon: "<link / abs url>"
+    #     favicon16x16: "<link / abs url>"
+    #     favicon32x32: "<link / abs url>"
+    #     apple_touch_icon: "<link / abs url>"
+    #     safari_pinned_tab: "<link / abs url>"
+
+    # cover:
+    #     hidden: true # hide everywhere but not in structured data
+    #     hiddenInList: true # hide on list pages and home
+    #     hiddenInSingle: true # hide on single page
+
+    # fuseOpts:
+    #     isCaseSensitive: false
+    #     shouldSort: true
+    #     location: 0
+    #     distance: 1000
+    #     threshold: 0.4
+    #     minMatchCharLength: 0
+    #     keys: ["title", "permalink", "summary", "content"]
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        noClasses: false
+        # anchorLineNos: true
+        # codeFences: true
+        # guessSyntax: true
+        # lineNos: true
+        # style: monokai
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true

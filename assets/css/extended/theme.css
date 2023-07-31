@@ -1,0 +1,105 @@
+body, body.list, body.dark, body.dark.list {
+  background-color: var(--theme);
+  background-image: url(/svg/background.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+body .main, body .header nav {
+  background: var(--theme);
+  border: 1px solid var(--border);
+}
+
+body .main {
+  border-top: none;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+body .header {
+  padding-top: 1em;
+}
+
+body .header nav {
+  border-bottom: none;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.recent-posts {
+  font-size: 42px;
+  margin-bottom: 1rem;
+}
+
+.post-entry, 
+#experience.interactive .experience-entry {
+  border-color: var(--tertiary);
+}
+
+.post-entry:hover,
+#experience .experience-entry.selected,
+#experience.interactive .experience-entry:hover {
+  background: var(--active);
+}
+
+.logo {
+  align-items: center;
+}
+
+.logo a {
+  line-height: 1;
+  display: inline-block;
+}
+
+.logo .title-primary {
+  color: var(--accent);
+  font-weight: 700;
+}
+.logo .title-secondary {
+  font-weight: 400;
+}
+.logo .space {
+  font-size: 0px;
+  width: 0px;
+}
+
+.button {
+  padding: 0.8em 1em;
+  margin: 0.5em 0.5em 0.5em 0;
+  transition: transform .1s;
+  display: inline-block;
+  box-shadow: 0 1px var(--secondary) !important;
+  line-height: 1; 
+
+  display: inline-flex;
+}
+
+.button .icon {
+  width: 1em;
+  height: 1em;
+
+  fill: var(--primary);
+  margin-right: 0.3em;
+}
+
+.button:hover, .button.selected {
+  background-color: var(--active);
+  box-shadow: 0 1px var(--tertiary) !important;
+}
+
+.button:active {
+  transform: scale(.96);
+}
+
+.big-header {
+  font-size: 42px;
+  margin-bottom: 1rem;
+}
+
+hr {
+  margin: 30px 0;
+  height: 1px;
+  background: var(--border);
+  border: 0;
+}

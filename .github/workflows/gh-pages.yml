@@ -15,22 +15,6 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '17.x'
-
-      - name: Cache dependencies
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: Install theme dependencies
-        run: npm ci
-
       - name: Build
         run: npm run build
 
@@ -50,7 +34,7 @@ jobs:
         with:
           name: personal-site-files
           path: dist
- 
+
       - uses: chrnorm/deployment-action@v2
         name: Create GitHub deployment
         id: deployment

@@ -1,0 +1,39 @@
+.profile2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
+  position: relative;
+  display: flex;
+  margin: var(--gap)0 calc(var(--gap) * 2);
+  /* text-wrap: balance; */
+}
+
+.profile2 .entry-content {
+  font-size: 18px;
+  color: var(--primary);
+  padding-right: 1em;
+  text-wrap: balance;
+}
+
+.profile2 .photo {
+  flex-shrink: 0;
+}
+
+.profile2 .photo img {
+  border-radius: var(--radius);
+}
+
+.profile2 .entry-content a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.profile2 h1 {
+  font-size: 34px;
+  line-height: 1.3;
+}
+
+.profile2 .social-icons {
+  display: inline-block;
+}

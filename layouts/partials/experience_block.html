@@ -1,0 +1,93 @@
+{{ $isHome := and (eq page.Type "page") (page.IsHome) }}
+
+<section id="experience" {{- if not $isHome -}}class="interactive" {{- end -}}>
+
+  {{ $experienceIndexPage := index (where (where site.Pages "Type" "experience") "Kind" "section") 0 }}
+  {{ $experienceLastPage := index (where site.RegularPages.ByDate.Reverse "Type" "experience") 0 }}
+
+  {{ $currentPageID := page.File.UniqueID }}
+  <div class="selector">
+    <div>
+      {{- $pages := where site.RegularPages.ByDate.Reverse "Type" "experience" }}
+      {{- range $index, $page := $pages }}
+      <article class="experience-entry {{ if eq $page.File.UniqueID $currentPageID }} selected {{ end }}">
+        {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <div class=".duration">{{- (.Param "duration") }}</div>
+          <h2>
+            {{- (.Param "jobTitle") }}
+            {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+          </h2>
+          <div class="position">
+            <span class="company">{{- (.Param "company") }}</span>
+            {{- if (.Param "location") }}{{- if (.Param "company") }}, {{- end }}{{- end }}
+            <span class="location">{{- (.Param "location") }}</span>
+          </div>
+        </header>
+        {{- if not $isHome }}
+        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+        {{- end }}
+      </article>
+      {{- end }}
+    </div>
+    {{ if and $isHome $experienceLastPage }}
+    <a href="{{ $experienceLastPage.RelPermalink }}" class="button">
+      {{ partial "svg_icon.html" "right-arrow" }}
+      All experience
+    </a>
+    {{- end }}
+  </div>
+
+  {{ with page }}
+  {{ if or $isHome .IsSection }}
+  {{ if $experienceIndexPage }}
+  <div class="content">
+    {{ with $experienceIndexPage }}
+
+    <h1 class="experience-title big-header">
+      {{ .Title }}
+    </h1>
+    {{ .Content }}
+    <div>
+      {{- if site.Params.profileMode.linkedIn }}
+      <a target="_blank" href="{{ site.Params.profileMode.linkedIn }}" class="button">
+        {{ partial "svg_icon.html" "linkedin" }}
+        LinkedIn
+      </a>
+      {{- end }}
+      <a target="_blank" href="/cv.pdf" class="button">
+        {{ partial "svg_icon.html" "paper" }}
+        Download CV
+      </a>
+      {{ if and $isHome $experienceLastPage }}
+      <a href="{{ $experienceLastPage.RelPermalink }}" class="button">
+        {{ partial "svg_icon.html" "right-arrow" }}
+        All experience
+      </a>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+  {{ else }}
+  <div class="content">
+    <h1 class="experience-title">
+      {{ .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h1>
+    {{- if .Param "skills" }}
+    <div class="skills">
+      <strong>Skills:</strong>
+      {{- range $index, $skill := .Param "skills" }}
+      {{- if $index }} · {{- end }}
+      <span>{{ $skill }}</span>
+      {{- end }}
+    </div>
+    {{- end }}
+    {{ .Content }}
+  </div>
+  {{ end }}
+  {{ end }}
+
+</section>

@@ -1,0 +1,15 @@
+<section id="contact-me">
+  <h1 class="big-header">Get in touch</h1>
+  <div class="contacts">
+    <img src="/images/contact-me-2.jpg" alt="Contact me" />
+    <div>
+      <p>Feel free to contact me with the any method below:</p>
+
+      <ul>
+        {{- range $index, $contact := site.Params.profileMode.contactMe }}
+          <li>{{ $contact.name }}: <a href="{{ $contact.link }}" target="_blank">{{ $contact.caption }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+  </div>
+</section>
