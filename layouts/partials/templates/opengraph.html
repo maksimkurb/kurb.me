@@ -29,7 +29,7 @@
 {{- end }}
 {{- end }}
 {{- end }}
-<meta property="og:image" content="{{- replace (print
+<meta name="image" property="og:image" content="{{- replace (print
   site.Params.cover.baseUrl "/"
   (replace (replace ($coverTitle | htmlUnescape | base64Encode) "/" "_") "+" "-") "/"
   (replace (replace ($coverSubtitle | htmlUnescape | base64Encode) "/" "_") "+" "-") "/"
