@@ -108,7 +108,7 @@
     (replace (replace ($coverTitle | htmlUnescape | base64Encode) "/" "_") "+" "-") "/"
     (replace (replace ($coverSubtitle | htmlUnescape | base64Encode) "/" "_") "+" "-") "/"
     (replace (replace ($coverDescription | htmlUnescape | base64Encode) "/" "_") "+" "-") "/cover.png") "=" "" | safeURL
-  }}
+  }},
   {{- end }}
   "datePublished": {{ .PublishDate }},
   "dateModified": {{ .Lastmod }},
