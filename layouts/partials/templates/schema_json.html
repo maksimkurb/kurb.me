@@ -74,41 +74,9 @@
   "articleBody": {{ .Content | safeJS | htmlUnescape | plainify }},
   "wordCount" : "{{ .WordCount }}",
   "inLanguage": {{ .Language.Lang | default "en-us" }},
-  {{- if .Params.cover.image }}
-  "image":
-    {{- if (ne .Params.cover.relative true) -}}
-    {{ .Params.cover.image | absURL }},
-    {{- else -}}
-    {{ (path.Join .RelPermalink .Params.cover.image ) | absURL }},
-    {{- end}}
-  {{- else }}
-  {{- $coverTitle := .Title | truncate 35 }}
-  {{- if .Params.cover.title }}
-    {{- $coverTitle = .Params.cover.title }}
-  {{- end }}
-  
-  {{- $coverSubtitle := "none" }}
-  {{- if .Params.cover.subtitle }}
-    {{- $coverSubtitle = .Params.cover.subtitle }}
-  {{- end }}
-  
-  {{- $coverDescription := "none" }}
-  {{- if .Params.cover.description }}
-    {{- $coverDescription = .Params.cover.description }}
-  {{- else }}
-    {{- if .Description }}
-      {{- $coverDescription = .Description | truncate 200 }}
-    {{- else }}
-      {{- $coverDescription = .Summary | truncate 200 }}
-    {{- end }}
-  {{- end }}
-  "image":
-  {{- replace (print
-    site.Params.cover.baseUrl "/"
-    (replace (replace ($coverTitle | htmlUnescape | base64Encode) "/" "_") "+" "-") "/"
-    (replace (replace ($coverSubtitle | htmlUnescape | base64Encode) "/" "_") "+" "-") "/"
-    (replace (replace ($coverDescription | htmlUnescape | base64Encode) "/" "_") "+" "-") "/cover.png") "=" "" | safeURL
-  }},
+  {{ $cover := partial "get-cover-image.html" . }}
+  {{- with $cover -}}
+  "image": {{ $cover.Permalink }},
   {{- end }}
   "datePublished": {{ .PublishDate }},
   "dateModified": {{ .Lastmod }},

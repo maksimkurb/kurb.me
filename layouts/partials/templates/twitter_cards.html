@@ -1,36 +1,8 @@
 <meta name="twitter:card" content="summary_large_image" />
-{{- if .Params.cover.image }}
-<meta name="twitter:image" content="{{ .Params.cover.image | absURL }}" />
-{{- else }}
-{{- $coverTitle := .Title | truncate 35 }}
-{{- if .Params.cover.title }}
-{{- $coverTitle = .Params.cover.title }}
-{{- end }}
-
-{{- $coverSubtitle := "none" }}
-{{- if .Params.cover.subtitle }}
-{{- $coverSubtitle = .Params.cover.subtitle }}
-{{- end }}
-
-{{- $coverDescription := "none" }}
-{{- if .Params.cover.description }}
-{{- $coverDescription = .Params.cover.description }}
-{{- else }}
-{{- if .Description }}
-{{- $coverDescription = .Description | truncate 200 }}
-{{- else }}
-{{- if .IsPage}}
-{{- $coverDescription = .Summary | truncate 200 }}
-{{- end }}
-{{- end }}
-{{- end }}
-<meta name="twitter:image" content="{{- replace (print
-  site.Params.cover.baseUrl "/"
-  (replace (replace ($coverTitle | htmlUnescape | base64Encode) "/" "_") "+" "-") "/"
-  (replace (replace ($coverSubtitle | htmlUnescape | base64Encode) "/" "_") "+" "-") "/"
-  (replace (replace ($coverDescription | htmlUnescape | base64Encode) "/" "_") "+" "-") "/cover.png") "=" "" | safeURL
-}}" />
-{{- end }}
+{{- $cover := partial "get-cover-image.html" . }}
+{{- with $cover -}}
+<meta name="twitter:image" content="{{ $cover.Permalink }}" />
+{{- end -}}
 
 <meta name="twitter:title" content="{{ .Title }}" />
 <meta name="twitter:description"

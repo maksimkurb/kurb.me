@@ -3,7 +3,6 @@ title: Experience
 cover:
   title: Maxim Kurbatov
   subtitle: Experience
-  description: ""
 ---
 
 Over 5 years of experience working in all kind of project sizes and teams.

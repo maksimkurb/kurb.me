@@ -1,0 +1,77 @@
+{{ $images := $.Resources.ByType "image" }}
+{{ $featured := $images.GetMatch "*feature*" }}
+{{ if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end }}
+{{ if not $featured }}
+    {{ $featured = resources.Get "/cover-template.png" }}
+    {{ $size := 80 }}
+
+    {{ $title := $.Title }}
+    {{- if $.Params.cover.title }}
+    {{- $title = $.Params.cover.title }}
+    {{- end }}
+
+    {{ if gt (len $title) 20 }}
+    {{ $size = 70 }}
+    {{ end }}
+
+    {{ $text := $title }}
+    {{ $textOptions := dict 
+        "color" "#222"
+        "size" $size
+        "lineSpacing" 10
+        "x" 80 "y" 80
+        "font" (resources.Get "/fonts/Montserrat-Regular.ttf")
+    }}
+
+    {{ $featured = $featured | images.Filter (images.Text $text $textOptions) }}
+    
+    {{ if $.Params.cover.subtitle }}
+        {{ $y := 190 }}
+        {{ if gt (len $title) 15 }}
+            {{ $y = add $y $size }}
+        {{ end }}
+        {{- $subtitle := $.Params.cover.subtitle }}
+
+        {{ $text = print ($subtitle | truncate 200) }}
+        {{ $textOptions = dict 
+            "color" "#222"
+            "size" 50
+            "lineSpacing" 5
+            "x" 80 "y" $y
+            "font" (resources.Get "/fonts/Montserrat-Regular.ttf")
+        }}
+        
+        {{ $featured = $featured | images.Filter (images.Text $text $textOptions) }}
+    {{ else }}
+
+        {{ if lt (len $title) 30 }}
+            {{- $description := "" }}
+            {{- if $.Params.cover.description }}
+                {{- $description = $.Params.cover.description }}
+            {{- else }}
+                {{- if $.Description }}
+                    {{- $description = $.Description }}
+                {{- else }}
+                    {{- if $.IsPage}}
+                        {{- $description = $.Summary }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+
+            {{ $text = print ($description | truncate 200) }}
+            {{ $textOptions = dict 
+                "color" "#222"
+                "size" 32
+                "lineSpacing" 5
+                "x" 80 "y" 260
+                "font" (resources.Get "/fonts/Montserrat-Regular.ttf")
+            }}
+            
+            {{ $featured = $featured | images.Filter (images.Text $text $textOptions) }}
+        {{ end }}
+
+    {{ end }}
+
+{{ end }}
+
+{{ return $featured }}

@@ -27,3 +27,4 @@ _testmain.go
 
 node_modules/
 .wrangler
+resources/_gen
