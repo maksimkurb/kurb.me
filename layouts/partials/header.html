@@ -39,6 +39,13 @@
 </script>
 {{- end }}
 
+{{- if site.Params.debug }}
+{{- $featured := partial "get-featured-image.html" . }}
+{{- with $featured -}}
+<img style="height: 240px; position: absolute; top: 1em" src="{{ $featured.Permalink }}" />
+{{- end -}}
+{{- end }}
+
 <header class="header">
     <nav class="nav">
         <div class="logo">

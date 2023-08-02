@@ -20,6 +20,15 @@
     {{- if ne (len $robots) 0 }}
     <meta name="robots" content="{{ delimit $robots "," }}">
     {{- end }}
+
+    {{- /* Misc */}}
+    {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+    {{- template "partials/analytics-gtag.html" . }}
+    {{- template "partials/templates/opengraph.html" . }}
+    {{- template "partials/templates/twitter_cards.html" . }}
+    {{- template "partials/templates/schema_json.html" . }}
+    {{- end -}}
+
     <meta http-equiv="refresh" content="0; url={{ $to }}" />
 </head>
 <body>

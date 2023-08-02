@@ -1,50 +1,45 @@
 {{ $images := $.Resources.ByType "image" }}
 {{ $featured := $images.GetMatch "*feature*" }}
+{{ $size := 80 }}
+{{ $x := 50 }}
+{{ $y := 50 }}
+{{ $y2 := 300 }}
 {{ if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end }}
 {{ if not $featured }}
     {{ $featured = resources.Get "/cover-template.png" }}
-    {{ $size := 80 }}
 
     {{ $title := $.Title }}
     {{- if $.Params.cover.title }}
     {{- $title = $.Params.cover.title }}
     {{- end }}
 
-    {{ if gt (len $title) 20 }}
-    {{ $size = 70 }}
-    {{ end }}
-
-    {{ $text := $title }}
+    {{ $text := print ($title | htmlUnescape | truncate 40) }}
     {{ $textOptions := dict 
         "color" "#222"
         "size" $size
         "lineSpacing" 10
-        "x" 80 "y" 80
+        "x" $x "y" $y
         "font" (resources.Get "/fonts/Montserrat-Regular.ttf")
     }}
 
     {{ $featured = $featured | images.Filter (images.Text $text $textOptions) }}
     
     {{ if $.Params.cover.subtitle }}
-        {{ $y := 190 }}
-        {{ if gt (len $title) 15 }}
-            {{ $y = add $y $size }}
-        {{ end }}
         {{- $subtitle := $.Params.cover.subtitle }}
 
-        {{ $text = print ($subtitle | truncate 200) }}
+        {{ $text = print ($subtitle | htmlUnescape | truncate 200) }}
         {{ $textOptions = dict 
             "color" "#222"
-            "size" 50
+            "size" (div $size 1.25)
             "lineSpacing" 5
-            "x" 80 "y" $y
+            "x" $x "y" $y2
             "font" (resources.Get "/fonts/Montserrat-Regular.ttf")
         }}
         
         {{ $featured = $featured | images.Filter (images.Text $text $textOptions) }}
     {{ else }}
 
-        {{ if lt (len $title) 30 }}
+        {{ if lt (len $title) 60 }}
             {{- $description := "" }}
             {{- if $.Params.cover.description }}
                 {{- $description = $.Params.cover.description }}
@@ -58,12 +53,12 @@
                 {{- end }}
             {{- end }}
 
-            {{ $text = print ($description | truncate 200) }}
+            {{ $text = print ($description | htmlUnescape | truncate 130) }}
             {{ $textOptions = dict 
                 "color" "#222"
-                "size" 32
-                "lineSpacing" 5
-                "x" 80 "y" 260
+                "size" (div $size 1.7)
+                "lineSpacing" 10
+                "x" $x "y" $y2
                 "font" (resources.Get "/fonts/Montserrat-Regular.ttf")
             }}
             

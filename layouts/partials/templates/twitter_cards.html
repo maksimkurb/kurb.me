@@ -1,7 +1,7 @@
 <meta name="twitter:card" content="summary_large_image" />
-{{- $cover := partial "get-cover-image.html" . }}
-{{- with $cover -}}
-<meta name="twitter:image" content="{{ $cover.Permalink }}" />
+{{- $featured := partial "get-featured-image.html" . }}
+{{- with $featured -}}
+<meta name="twitter:image" content="{{ $featured.Permalink }}" />
 {{- end -}}
 
 <meta name="twitter:title" content="{{ .Title }}" />

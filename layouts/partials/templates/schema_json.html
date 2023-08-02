@@ -74,9 +74,9 @@
   "articleBody": {{ .Content | safeJS | htmlUnescape | plainify }},
   "wordCount" : "{{ .WordCount }}",
   "inLanguage": {{ .Language.Lang | default "en-us" }},
-  {{ $cover := partial "get-cover-image.html" . }}
-  {{- with $cover -}}
-  "image": {{ $cover.Permalink }},
+  {{ $featured := partial "get-featured-image.html" . }}
+  {{- with $featured -}}
+  "image": {{ $featured.Permalink }},
   {{- end }}
   "datePublished": {{ .PublishDate }},
   "dateModified": {{ .Lastmod }},

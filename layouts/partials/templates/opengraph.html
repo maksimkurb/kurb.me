@@ -4,9 +4,9 @@
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
-{{- $cover := partial "get-cover-image.html" . }}
-{{- with $cover -}}
-<meta name="image" property="og:image" content="{{ $cover.Permalink }}" />
+{{- $featured := partial "get-featured-image.html" . }}
+{{- with $featured -}}
+<meta name="image" property="og:image" content="{{ $featured.Permalink }}" />
 {{- end -}}
 
 {{- if .IsPage }}

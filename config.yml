@@ -97,6 +97,7 @@ params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Maxim Kurbatov's Personal Website"
     author: Maxim Kurbatov
+    debug: false # Debug cover images
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
