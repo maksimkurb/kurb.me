@@ -113,7 +113,7 @@ params:
     # comments: false
     # images: ["cover.png"]
     cover:
-      baseURL: https://og-generator.kurb.workers.dev/cover.png
+      baseURL: https://og-generator.kurb.workers.dev
 
     profileMode:
         enabled: true

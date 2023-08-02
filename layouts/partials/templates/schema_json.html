@@ -87,12 +87,12 @@
     {{- $coverTitle = .Params.cover.title }}
   {{- end }}
   
-  {{- $coverSubtitle := "" }}
+  {{- $coverSubtitle := "none" }}
   {{- if .Params.cover.subtitle }}
     {{- $coverSubtitle = .Params.cover.subtitle }}
   {{- end }}
   
-  {{- $coverDescription := "" }}
+  {{- $coverDescription := "none" }}
   {{- if .Params.cover.description }}
     {{- $coverDescription = .Params.cover.description }}
   {{- else }}
@@ -103,7 +103,12 @@
     {{- end }}
   {{- end }}
   "image":
-  {{ printf "%s?title=%s&subtitle=%s&description=%s" site.Params.cover.baseUrl ($coverTitle | safeURL) ($coverSubtitle | safeURL) ($coverDescription | safeURL) }},
+  {{- replace (print
+    site.Params.cover.baseUrl "/"
+    (replace (replace ($coverTitle | htmlUnescape | base64Encode) "/" "_") "+" "-") "/"
+    (replace (replace ($coverSubtitle | htmlUnescape | base64Encode) "/" "_") "+" "-") "/"
+    (replace (replace ($coverDescription | htmlUnescape | base64Encode) "/" "_") "+" "-") "/cover.png") "=" "" | safeURL
+  }}
   {{- end }}
   "datePublished": {{ .PublishDate }},
   "dateModified": {{ .Lastmod }},
