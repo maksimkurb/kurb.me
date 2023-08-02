@@ -25,9 +25,10 @@ export default {
     const description = params.get('description') || '';
 
     const align = description ? 'flex-start' : 'center';
+    const textAlign = description ? 'left' : 'center';
 
     const html = `
-    <div style="display: flex; padding: 5em; height: 100vh; width: 100vw; align-items: ${align}; justify-content: ${align}; flex-direction: column; background-image: linear-gradient(65deg, #E0D9FF, #BFECFF, #CFFEE5); text-align: center">
+    <div style="display: flex; padding: 5em; height: 100vh; width: 100vw; align-items: ${align}; justify-content: ${align}; flex-direction: column; background-image: linear-gradient(65deg, #E0D9FF, #BFECFF, #CFFEE5); text-align: ${textAlign}">
       <div style="display: flex; color: #333; font-weight: 600; font-size: 96px">
         ${title}
       </div>

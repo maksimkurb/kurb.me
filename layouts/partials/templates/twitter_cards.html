@@ -1,0 +1,36 @@
+<meta name="twitter:card" content="summary_large_image" />
+{{- if .Params.cover.image }}
+<meta name="twitter:image" content="{{ .Params.cover.image | absURL }}" />
+{{- else }}
+{{- $coverTitle := .Title | truncate 35 }}
+{{- if .Params.cover.title }}
+{{- $coverTitle = .Params.cover.title }}
+{{- end }}
+
+{{- $coverSubtitle := "" }}
+{{- if .Params.cover.subtitle }}
+{{- $coverSubtitle = .Params.cover.subtitle }}
+{{- end }}
+
+{{- $coverDescription := "" }}
+{{- if .Params.cover.description }}
+{{- $coverDescription = .Params.cover.description }}
+{{- else }}
+{{- if .Description }}
+{{- $coverDescription = .Description | truncate 200 }}
+{{- else }}
+{{- if .IsPage}}
+{{- $coverDescription = .Summary | truncate 200 }}
+{{- end }}
+{{- end }}
+{{- end }}
+<meta name="twitter:image" content="{{ (printf "%s?title=%s&subtitle=%s&description=%s" site.Params.cover.baseUrl
+  ($coverTitle | safeURL) ($coverSubtitle | safeURL) ($coverDescription | safeURL)) | safeHTML }}" />
+{{- end }}
+
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
+{{ with site.Social.twitter -}}
+<meta name="twitter:site" content="@{{ . }}" />
+{{ end -}}
