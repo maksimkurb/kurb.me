@@ -1,9 +1,20 @@
-{{ $images := $.Resources.ByType "image" }}
-{{ $featured := $images.GetMatch "*feature*" }}
 {{ $size := 80 }}
 {{ $x := 50 }}
 {{ $y := 50 }}
 {{ $y2 := 300 }}
+
+{{ $featured := "" }}
+
+{{ if page.Params.cover.graphImage }}
+{{ $featured = dict "Permalink" page.Params.cover.graphImage }}
+{{ end }}
+
+{{ $images := $.Resources.ByType "image" }}
+
+{{ if not $featured }}
+{{ $featured = $images.GetMatch "*feature*" }}
+{{ end }}
+
 {{ if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end }}
 {{ if not $featured }}
     {{ $featured = resources.Get "/cover-template.png" }}

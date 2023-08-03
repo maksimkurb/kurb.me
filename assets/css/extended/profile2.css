@@ -29,7 +29,8 @@
   font-weight: 500;
 }
 
-.profile2 h1 {
+.profile2 .entry-header,
+.profile2 .entry-header h1 {
   font-size: 34px;
   line-height: 1.3;
 }

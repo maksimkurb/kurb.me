@@ -2,7 +2,7 @@
 <article class="home-info profile2">
     <div class="text">
         <header class="entry-header">
-            <h1>{{ .Title | markdownify }}</h1>
+            {{ .Title | markdownify }}
         </header>
         <div class="entry-content">
             {{ .Content | markdownify }}
