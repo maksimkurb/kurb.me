@@ -7,4 +7,4 @@ cover:
 This is a test LinkedIn Page.
 
 This image SHOULD NOT be used:
-<img width="256" src="/images/maxim2.jpg" />
+<img width="256" src="/images/maxim2.jpg" alt="avatar picture" />
