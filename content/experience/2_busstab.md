@@ -13,3 +13,8 @@ I built a system for checking individuals and legal entities for risk factors.
 System aggregates information from various sources and generates reports by operator request, consisting of real-time APIs and APIs with queue processing.
 
 Bank security team used that app to check individuals before approving loan issuance.
+
+#### My achievements:
+- Developed backend and frontend for system from scratch.
+- Integrated with 3 third-party systems to perform background checks on individuals.
+- Implemented OAuth provider and public API for seamless integration with our service.

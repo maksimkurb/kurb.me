@@ -14,4 +14,8 @@ I started my professional path as a Java Developer on a Spring stack in a distri
 I've took part in the development of a batch system that accumulates customer data from various sources, processes it and provides it to other systems.
 System processed hundreds and thousands of messages per second and processing should've been written with performance and data integrity in mind.
 
-Here I improved my skills by taking relevant courses as a part of my career development in the company.
+Also I improved my skills here by taking relevant courses as a part of my career development in the company.
+
+- Performed technical design, development, code review, and creation of test cases for backend systems.
+- Prepared demo-scripts and showed demo.
+- Worked with Scrum methodology.

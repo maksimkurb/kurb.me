@@ -15,9 +15,9 @@ I coached colleagues from my team and worked with customers' staff to integrate 
 
 
 #### My achievements:
-- Designed/developed integration APIs with external heterogeneous systems.
+- Designed and developed integration APIs with external heterogeneous systems.
 - Mentored and coached 3 colleagues on the team.
-- Implemented client&server API code generation with the tracing in the mind.
-- Constantly improved the workspace and code style.
-- Adapted development processes to rapidly changing requirements allowing to deliver releases faster.
-- Kept a high level of knowledge of the whole project code base.
+- Implemented code generation for client-server APIs with the tracing in the mind.
+- Continuously enhanced digital workspace and project code style.
+- Adapted development processes to rapidly changing requirements, enabling faster releases.
+- Maintained a comprehensive understanding of the entire project's code base.

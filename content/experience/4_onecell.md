@@ -16,7 +16,7 @@ Platform core architecture is built by me and then evolved by our team.
 
 
 #### My achievements:
-- Designed/developed the MVP of the digital pathology backend in 2 months.
-- Split a huge monorepo of modules into independent repositories to allow separate versioning of microservices with the help of Git history rewriting tools.
-- Mentored 2 colleagues on the team.
-- Improved the Notion workspace to make it easier for the whole team to work on their own tasks.
+- Designed and developed the MVP of the platform backend within a 2-month timeframe.
+- Restructured a monorepo with modules into 10+ independent repositories for separate versioning of microservices, ensuring correct Git history rewriting.
+- Mentored and coached 2 colleagues on the team.
+- Enhanced the Notion workspace, streamlining task management and optimizing team collaboration.
