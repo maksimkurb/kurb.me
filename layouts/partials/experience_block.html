@@ -56,16 +56,10 @@
         LinkedIn
       </a>
       {{- end }}
-      <a target="_blank" href="/cv.pdf" class="button">
+      <a target="_blank" href="/resume.pdf" class="button">
         {{ partial "svg_icon.html" "paper" }}
-        Download CV
+        Download Resume
       </a>
-      {{ if and $isHome $experienceLastPage }}
-      <a href="{{ $experienceLastPage.RelPermalink }}" class="button">
-        {{ partial "svg_icon.html" "right-arrow" }}
-        All experience
-      </a>
-      {{- end }}
     </div>
     {{- end }}
   </div>

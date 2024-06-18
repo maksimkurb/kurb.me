@@ -40,8 +40,8 @@ languages:
                 # - name: Tags
                 #   url: tags/
                 #   weight: 10
-                - name: My CV
-                  url: /cv.pdf
+                - name: My Resume
+                  url: /resume.pdf
                   weight: 10
                 - name: GitHub
                   url: https://github.com/maksimkurb/
@@ -155,16 +155,12 @@ params:
           url: "https://github.com/maksimkurb"
         - name: linkedin
           url: "https://www.linkedin.com/in/maxim-kurbatov/"
-        - name: facebook
-          url: "https://facebook.com/kurb.me"
         - name: instagram
           url: "https://instagram.com/kurb.me"
         - name: telegram
           url: "https://t.me/maksimkurb"
         - name: email
           url: "mailto:maxim@kurb.me"
-        - name: Rss
-          url: "index.xml"
 
     editPost:
         URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
