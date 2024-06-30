@@ -1,7 +1,7 @@
 ---
 date: 2022-05-01T00:00:00+01:00
-title: "Senior Java Developer - OneCell"
-jobTitle: "Senior Java Developer"
+title: "Senior Java Engineer - OneCell"
+jobTitle: "Senior Java Engineer"
 company: "OneCell"
 # location: "Remote"
 duration: "05/2022-current"

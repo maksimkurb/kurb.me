@@ -1,8 +1,8 @@
 ---
 date: 2020-08-01T00:00:00+01:00
 draft: false
-title: "Java Developer - OneCell"
-jobTitle: "Java Developer"
+title: "Java Engineer - OneCell"
+jobTitle: "Java Engineer"
 company: "OneCell"
 # location: "Remote"
 duration: "08/2020-05/2022"
