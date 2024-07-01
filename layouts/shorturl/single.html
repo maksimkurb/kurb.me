@@ -5,4 +5,6 @@
 {{ end }}
 <h1>Redirecting to <a href="{{ $to }}">{{ $to }}</a></h1>
   {{ .Content }}
+  
+  {{- partial "extend_footer.html" . }}
 {{ end }}
