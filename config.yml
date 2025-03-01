@@ -40,8 +40,8 @@ languages:
                 # - name: Tags
                 #   url: tags/
                 #   weight: 10
-                - name: My Resume
-                  url: /resume.pdf
+                - name: My CV
+                  url: /cv.pdf
                   weight: 10
                 - name: GitHub
                   url: https://github.com/maksimkurb/
@@ -114,7 +114,7 @@ params:
     # comments: false
     # images: ["cover.png"]
     cover:
-      baseURL: https://og-generator.kurb.workers.dev
+      baseURL: "/images/cover.png"
 
     profileMode:
         enabled: true
@@ -142,9 +142,9 @@ params:
         Title: >
           # Hello, I'm Maxim.
           
-          <div style="font-weight: normal">Java Developer</div>
+          <div style="font-weight: normal">Senior Java Engineer</div>
         Content: >
-            I work as a lead Java Developer at [OneCell](https://www.onecell.ai/en), digital pathology platform driven by AI.
+            I work as a Lead Backend Developer at [OneCell](https://www.onecell.ai/en), digital pathology platform driven by AI.
             My background is diverse and I have [experience](/experience) in various fields related to digital technology.
             I have worked on backend & frontend development, coaching and a bit of devops.
             I am huge automation fan as it helps optimize processes and avoid repetitive work.

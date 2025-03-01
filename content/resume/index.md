@@ -1,7 +1,7 @@
 ---
-title: "Cv"
-date: 2023-07-28T16:41:15+05:00
+title: "Maxim Kurbatov's CV"
+date: 2025-03-01T00:00:00+00:00
 type: "shorturl"
-shortto: "/resume.pdf"
+shortto: "/cv.pdf"
 ---
 
