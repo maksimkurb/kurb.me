@@ -12,7 +12,9 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-googleAnalytics: G-5GYQMRLRB3
+services:
+  googleAnalytics: 
+    id: G-5GYQMRLRB3
 
 relativeURLs: true
 
