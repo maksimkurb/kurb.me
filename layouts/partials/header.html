@@ -105,10 +105,10 @@
 
                 {{- $lang := .Lang}}
                 {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                {{- with site.Home.AllTranslations }}
+                {{- with site.Home.Translations }}
                 <ul class="lang-switch">
                     {{- if $separator }}<li>|</li>{{ end }}
-                    {{- range . -}}
+                    {{- range site.Home.AllTranslations -}}
                     {{- if ne $lang .Lang }}
                     <li>
                         <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
