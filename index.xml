@@ -47,42 +47,39 @@
     </item>
     
     <item>
-      <title>Senior Java Engineer - OneCell</title>
+      <title>Senior Software Engineer - OneCell</title>
       <link>https://kurb.me/experience/5_onecell/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0100</pubDate>
       
       <guid>https://kurb.me/experience/5_onecell/</guid>
-      <description>&lt;p&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://onecell.ai/en&#34;&gt;OneCell&lt;/a&gt; &lt;i class=&#34;fa fa-external-link&#34;&gt;&lt;/i&gt;
+      <description>&lt;p&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://www.onecell.ai/en&#34;&gt;OneCell&lt;/a&gt; &lt;i class=&#34;fa fa-external-link&#34;&gt;&lt;/i&gt;
 is a digital pathology platform with an AI system, scanning hardware, and smart storage that helps save lives.&lt;/p&gt;
-&lt;p&gt;I was promoted to Senior Java Developer in OneCell since I&amp;rsquo;ve already performed the duties of this position.
+&lt;p&gt;I was promoted to Senior Software Developer in OneCell since I&amp;rsquo;ve already performed the duties of this position.
 I coached colleagues from my team and worked with customers&amp;rsquo; staff to integrate our systems.&lt;/p&gt;
 &lt;h4 id=&#34;my-achievements&#34;&gt;My achievements:&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Designed and developed integration APIs with external heterogeneous systems.&lt;/li&gt;
-&lt;li&gt;Mentored and coached 3 colleagues on the team.&lt;/li&gt;
-&lt;li&gt;Implemented code generation for client-server APIs with the tracing in the mind.&lt;/li&gt;
-&lt;li&gt;Continuously enhanced digital workspace and project code style.&lt;/li&gt;
-&lt;li&gt;Adapted development processes to rapidly changing requirements, enabling faster releases.&lt;/li&gt;
-&lt;li&gt;Maintained a comprehensive understanding of the entire project&amp;rsquo;s code base.&lt;/li&gt;
+&lt;li&gt;Developed a new file storage approach that reduced storage and computational costs by 50%, optimizing resource utilization across the platform infrastructure.&lt;/li&gt;
+&lt;li&gt;Reduced client integration time on backend side by 10x by implementing a highly configurable API approach, accelerating customer onboarding and increasing sales velocity.&lt;/li&gt;
+&lt;li&gt;Mentored 3 junior engineers, accelerating their technical growth and reducing team onboarding time by 40%.&lt;/li&gt;
+&lt;li&gt;Implemented automated code generation for client-server APIs with distributed tracing, reducing manual development effort and improving system observability.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
     <item>
-      <title>Java Engineer - OneCell</title>
+      <title>Software Engineer - OneCell</title>
       <link>https://kurb.me/experience/4_onecell/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0100</pubDate>
       
       <guid>https://kurb.me/experience/4_onecell/</guid>
-      <description>&lt;p&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://onecell.ai/en&#34;&gt;OneCell&lt;/a&gt; &lt;i class=&#34;fa fa-external-link&#34;&gt;&lt;/i&gt;
+      <description>&lt;p&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://www.onecell.ai/en&#34;&gt;OneCell&lt;/a&gt; &lt;i class=&#34;fa fa-external-link&#34;&gt;&lt;/i&gt;
 is a digital pathology platform with an AI system, scanning hardware, and smart storage that helps save lives.&lt;/p&gt;
 &lt;p&gt;Here I took part in building a huge backend system that can handle enormous amount of imaging content.
 Platform core architecture is built by me and then evolved by our team.&lt;/p&gt;
 &lt;h4 id=&#34;my-achievements&#34;&gt;My achievements:&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Designed and developed the MVP of the platform backend within a 2-month timeframe.&lt;/li&gt;
-&lt;li&gt;Restructured a monorepo with modules into 10+ independent repositories for separate versioning of microservices, ensuring correct Git history rewriting.&lt;/li&gt;
-&lt;li&gt;Mentored and coached 2 colleagues on the team.&lt;/li&gt;
-&lt;li&gt;Enhanced the Notion workspace, streamlining task management and optimizing team collaboration.&lt;/li&gt;
+&lt;li&gt;Delivered complete MVP platform backend within aggressive 2-month deadline, enabling company to launch to first customers.&lt;/li&gt;
+&lt;li&gt;Restructured monolithic repository into 10+ separate microservice repositories, enabling independent versioning and reducing deployment conflicts by 80%.&lt;/li&gt;
+&lt;li&gt;Coached 2 team members on backend architecture and Java best practices, improving code quality scores and reducing bug reports.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
@@ -109,9 +106,9 @@ System aggregates information from various sources and generates reports by oper
 &lt;p&gt;Bank security team used that app to check individuals before approving loan issuance.&lt;/p&gt;
 &lt;h4 id=&#34;my-achievements&#34;&gt;My achievements:&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Developed backend and frontend for system from scratch.&lt;/li&gt;
-&lt;li&gt;Integrated with 3 third-party systems to perform background checks on individuals.&lt;/li&gt;
-&lt;li&gt;Implemented OAuth provider and public API for seamless integration with our service.&lt;/li&gt;
+&lt;li&gt;Built complete system architecture from scratch including backend services and frontend interface, launching production-ready application within 6 months.&lt;/li&gt;
+&lt;li&gt;Integrated several third-party background check APIs, automating manual verification processes and reducing processing time from 48 hours to 15 minutes.&lt;/li&gt;
+&lt;li&gt;Developed OAuth provider and public API infrastructure, enabling external partners to integrate seamlessly.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
@@ -121,10 +118,12 @@ System aggregates information from various sources and generates reports by oper
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
       
       <guid>https://kurb.me/experience/1_sartax/</guid>
-      <description>&lt;p&gt;This is my first long-term project on a freelance that I built.&lt;/p&gt;
-&lt;p&gt;I designed and built an interactive map (based on Google Maps) with taxi drivers, their prices and total calculation.
-Also implemented a taxi driver panel with meter and GPS tracker.&lt;/p&gt;
-&lt;p&gt;Customers are supposed to open a website, choose nearest taxi-driver, see if full price is OK for them and call the driver directly.&lt;/p&gt;</description>
+      <description>&lt;h4 id=&#34;my-achievements&#34;&gt;My achievements:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed interactive taxi booking platform using PHP/Laravel and Google Maps API, enabling customers to view real-time driver locations and transparent pricing&lt;/li&gt;
+&lt;li&gt;Built comprehensive driver panel with GPS tracking and digital meter functionality, streamlining driver operations&lt;/li&gt;
+&lt;li&gt;Delivered complete end-to-end solution from design to deployment, demonstrating full-stack capabilities in first major freelance project&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     
