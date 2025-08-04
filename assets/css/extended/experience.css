@@ -179,3 +179,41 @@
     display: none;
   }
 }
+
+#projects .project-list {
+  margin-top: 1em;
+  list-style: none;
+  padding: 0;
+}
+
+#projects .project-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+#projects .project-icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 1em;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects .project-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 3px solid white;
+}
+
+#projects .project-content {
+  line-height: 1.6;
+  flex: 1;
+}
+
+#projects .project-content strong {
+  color: var(--primary);
+}

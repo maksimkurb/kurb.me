@@ -4,8 +4,8 @@ draft: false
 title: "Java Developer - Grid Dynamics"
 jobTitle: "Java Developer"
 company: "Grid Dynamics"
-location: "Saratov, Russia"
-duration: "08/2019-02/2020"
+# location: "Onsite"
+duration: "Aug 2019 - Feb 2020"
 skills: ["Java", "Spring Framework", "Kafka", "MySQL", "Kubernetes"]
 ---
 
@@ -16,6 +16,6 @@ System processed hundreds and thousands of messages per second and processing sh
 
 Also I improved my skills here by taking relevant courses as a part of my career development in the company.
 
-- Performed technical design, development, code review, and creation of test cases for backend systems.
-- Prepared demo-scripts and showed demo.
-- Worked with Scrum methodology.
+- Developed backend components and implemented unit test cases under the guidance of the senior developer, achieving 85% code coverage and passing all quality gates.
+- Conducted peer code reviews using Git workflow processes, identifying 15+ potential bugs and improving team code quality standards.
+- Created and presented technical demos to stakeholders in the international team every week following the Scrum methodology.

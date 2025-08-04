@@ -4,14 +4,12 @@ draft: false
 title: "Full Stack Engineer - Sartax"
 jobTitle: "Full Stack Engineer"
 company: "Sartax"
-location: "Remote"
+# location: "Remote"
 duration: "2016"
 skills: ["PHP", "Laravel", "JavaScript", "REST", "Bootstrap", "GPS", "Google Maps"]
 ---
 
-This is my first long-term project on a freelance that I built.
-
-I designed and built an interactive map (based on Google Maps) with taxi drivers, their prices and total calculation.
-Also implemented a taxi driver panel with meter and GPS tracker.
-
-Customers are supposed to open a website, choose nearest taxi-driver, see if full price is OK for them and call the driver directly.
+#### My achievements:
+- Developed interactive taxi booking platform using PHP/Laravel and Google Maps API, enabling customers to view real-time driver locations and transparent pricing
+- Built comprehensive driver panel with GPS tracking and digital meter functionality, streamlining driver operations
+- Delivered complete end-to-end solution from design to deployment, demonstrating full-stack capabilities in first major freelance project

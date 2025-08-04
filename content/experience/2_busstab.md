@@ -4,8 +4,8 @@ draft: false
 title: "Full Stack Engineer - Business Stability"
 jobTitle: "Full Stack Engineer"
 company: "Business Stability"
-location: "Remote"
-duration: "12/2018-08/2019"
+# location: "Remote"
+duration: "Dec 2018 - Aug 2019"
 skills: ["Node.js", "React.js", "TypeScript", "React Native", "NestJS", "Redis", "GraphQL", "Jest", "PostgreSQL", "JavaScript"]
 ---
 
@@ -15,6 +15,6 @@ System aggregates information from various sources and generates reports by oper
 Bank security team used that app to check individuals before approving loan issuance.
 
 #### My achievements:
-- Developed backend and frontend for system from scratch.
-- Integrated with 3 third-party systems to perform background checks on individuals.
-- Implemented OAuth provider and public API for seamless integration with our service.
+- Built complete system architecture from scratch including backend services and frontend interface, launching production-ready application within 6 months.
+- Integrated several third-party background check APIs, automating manual verification processes and reducing processing time from 48 hours to 15 minutes.
+- Developed OAuth provider and public API infrastructure, enabling external partners to integrate seamlessly.
