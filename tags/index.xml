@@ -5,6 +5,43 @@
     <link>https://kurb.me/tags/</link>
     <description>Recent content in Tags on Maxim Kurbatov</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://kurb.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://kurb.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cups</title>
+      <link>https://kurb.me/tags/cups/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kurb.me/tags/cups/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openwrt</title>
+      <link>https://kurb.me/tags/openwrt/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kurb.me/tags/openwrt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>P910nd</title>
+      <link>https://kurb.me/tags/p910nd/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kurb.me/tags/p910nd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Printing</title>
+      <link>https://kurb.me/tags/printing/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kurb.me/tags/printing/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

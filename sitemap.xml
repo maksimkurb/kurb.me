@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kurb.me/tags/cups/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kurb.me/</loc>
-    <lastmod>2025-05-03T00:00:00+01:00</lastmod>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/tags/openwrt/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/tags/p910nd/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/posts/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/tags/printing/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/posts/01_printing_on_openwrt/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/tags/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kurb.me/priceculator/</loc>
     <lastmod>2025-05-03T00:00:00+01:00</lastmod>
@@ -50,7 +71,5 @@
     <loc>https://kurb.me/search/</loc>
   </url><url>
     <loc>https://kurb.me/series/</loc>
-  </url><url>
-    <loc>https://kurb.me/tags/</loc>
   </url>
 </urlset>
