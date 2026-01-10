@@ -43,5 +43,50 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Tutorial</title>
+      <link>https://kurb.me/tags/tutorial/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kurb.me/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3d Printer</title>
+      <link>https://kurb.me/tags/3d-printer/</link>
+      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kurb.me/tags/3d-printer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BTT Pi</title>
+      <link>https://kurb.me/tags/btt-pi/</link>
+      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kurb.me/tags/btt-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Klipper</title>
+      <link>https://kurb.me/tags/klipper/</link>
+      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kurb.me/tags/klipper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neptune</title>
+      <link>https://kurb.me/tags/neptune/</link>
+      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kurb.me/tags/neptune/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

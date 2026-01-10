@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Neptune on Maxim Kurbatov</title>
+    <link>https://kurb.me/tags/neptune/</link>
+    <description>Recent content in Neptune on Maxim Kurbatov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://kurb.me/tags/neptune/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrading your Elegoo Neptune 3 Pro 3D Printer with Klipper</title>
+      <link>https://kurb.me/posts/01_elegoo_neptune_btt_pi/</link>
+      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kurb.me/posts/01_elegoo_neptune_btt_pi/</guid>
+      <description>This guide and 3D model help you install Klipper on your Elegoo Neptune 3 Pro with BTT Pi V1.2.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kurb.me/posts/02_printing_on_openwrt/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kurb.me/tags/cups/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -20,10 +23,10 @@
     <loc>https://kurb.me/tags/printing/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kurb.me/posts/01_printing_on_openwrt/</loc>
+    <loc>https://kurb.me/tags/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kurb.me/tags/</loc>
+    <loc>https://kurb.me/tags/tutorial/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kurb.me/priceculator/</loc>
@@ -43,6 +46,21 @@
   </url><url>
     <loc>https://kurb.me/resume/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/tags/3d-printer/</loc>
+    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/tags/btt-pi/</loc>
+    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/tags/klipper/</loc>
+    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/tags/neptune/</loc>
+    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kurb.me/posts/01_elegoo_neptune_btt_pi/</loc>
+    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kurb.me/experience/</loc>
     <lastmod>2022-05-01T00:00:00+01:00</lastmod>
