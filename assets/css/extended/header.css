@@ -1,0 +1,26 @@
+#menu li a {
+  box-sizing: border-box;
+  border: 1px solid var(--tertiary);
+  line-height: 1rem;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  transition: transform 0.1s;
+}
+
+#menu li a.active {
+  border: 1px solid var(--tertiary);
+  background: var(--active);
+}
+
+#menu li a:active {
+  transform: scale(0.95);
+}
+
+#menu li a:hover {
+  background: var(--active);
+}
+
+
+#menu li + li {
+  margin-inline-start: 0.75rem;
+}

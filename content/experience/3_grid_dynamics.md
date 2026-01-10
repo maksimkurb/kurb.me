@@ -7,6 +7,7 @@ company: "Grid Dynamics"
 # location: "Onsite"
 duration: "Aug 2019 - Feb 2020"
 skills: ["Java", "Spring Framework", "Kafka", "MySQL", "Kubernetes"]
+searchHidden: true
 ---
 
 I started my professional path as a Java Developer on a Spring stack in a distributed team in Grid Dynamics.

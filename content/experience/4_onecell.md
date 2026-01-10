@@ -7,6 +7,7 @@ company: "OneCell"
 # location: "Remote"
 duration: "Aug 2020 - May 2022"
 skills: ["Java", "Spring Framework", "Kafka", "PostgreSQL", "Kubernetes", "WebSocket", "Python"]
+searchHidden: true
 ---
 
 {{% a_blank "OneCell" "https://www.onecell.ai/en" %}} is a digital pathology platform with an AI system, scanning hardware, and smart storage that helps save lives.

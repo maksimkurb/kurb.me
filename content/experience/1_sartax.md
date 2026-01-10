@@ -7,6 +7,7 @@ company: "Sartax"
 # location: "Remote"
 duration: "2016"
 skills: ["PHP", "Laravel", "JavaScript", "REST", "Bootstrap", "GPS", "Google Maps"]
+searchHidden: true
 ---
 
 #### My achievements:

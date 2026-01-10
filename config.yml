@@ -15,6 +15,10 @@ pygmentsUseClasses: true
 services:
   googleAnalytics: 
     id: G-5GYQMRLRB3
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true
 
 relativeURLs: true
 
@@ -26,31 +30,43 @@ minify:
     # minifyOutput: true
 
 languages:
-    en:
-        languageName: "English"
-        weight: 1
-        taxonomies:
-          category: categories
-          tag: tags
-          series: series
-        menu:
-            main:
-                # - name: Archive
-                #   url: archives
-                #   weight: 5
-                # - name: Search
-                #   url: search/
-                #   weight: 10
-                # - name: Tags
-                #   url: tags/
-                #   weight: 10
-                - name: My CV
-                  url: /cv.pdf
-                  weight: 10
-                - name: GitHub
-                  url: https://github.com/maksimkurb/
-                - name: LinkedIn
-                  url: https://www.linkedin.com/in/maxim-kurbatov/
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        # - name: Archive
+        #   url: archives
+        #   weight: 5
+        # - name: Search
+        #   url: search/
+        #   weight: 10
+        # - name: Tags
+        #   url: tags/
+        #   weight: 10
+        - name: Posts
+          url: /posts
+          weight: 20
+        - name: Search
+          url: /search
+          weight: 30
+        - name: GitHub
+          url: https://github.com/maksimkurb/
+          params:
+            target: _blank
+        - name: My CV
+          url: /cv.pdf
+          weight: 40
+          params:
+            target: _blank
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/maxim-kurbatov/
+          params:
+            target: _blank
 
     # fr:
     #     languageName: ":fr:"
@@ -92,144 +108,138 @@ languages:
     #               url: "#"
 
 outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Maxim Kurbatov's Personal Website"
-    author: Maxim Kurbatov
-    debug: false # Debug cover images
-    # author: ["Me", "You"] # multiple authors
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Maxim Kurbatov's Personal Website"
+  author: Maxim Kurbatov
+  debug: false # Debug cover images
+  # author: ["Me", "You"] # multiple authors
 
-    defaultTheme: auto
-    # disableThemeToggle: true
-    ShowShareButtons: false
-    ShowReadingTime: true
-    # disableSpecial1stPost: true
-    displayFullLangName: true
-    ShowPostNavLinks: true
-    ShowBreadCrumbs: true
-    ShowCodeCopyButtons: true
-    ShowRssButtonInSectionTermList: true
-    ShowToc: true
-    # comments: false
-    # images: ["cover.png"]
-    cover:
-      baseURL: "/images/cover.png"
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  # comments: false
+  # images: ["cover.png"]
+  cover:
+    baseURL: "/images/cover.png"
 
-    profileMode:
-        enabled: true
-        # title: PaperMod
-        imageUrl: "/images/maxim2.jpg"
-        imageTitle: Maxim Kurbatov
-        imageWidth: 280
-        imageHeight: 280
-        linkedIn: "https://www.linkedin.com/in/maxim-kurbatov/"
-        contactMe:
-          - name: Email
-            link: mailto:maxim@kurb.me
-            caption: maxim@kurb.me
-          - name: LinkedIn
-            link: "https://www.linkedin.com/in/maxim-kurbatov/"
-            caption: "in/maxim-kurbatov"
-          - name: Telegram
-            link: "https://t.me/maksimkurb"
-            caption: "@maksimkurb"
-        buttons:
-            - name: Archives
-              url: archives
-            - name: Tags
-              url: tags
-        Title: >
-          # Hello, I'm Maxim.
-          
-          <div style="font-weight: normal">Senior Java Engineer</div>
-        Content: >
-            I work as a Lead Backend Developer at [OneCell](https://www.onecell.ai/en), digital pathology platform driven by AI.
-            My background is diverse and I have [experience](/experience) in various fields related to digital technology.
-            I have worked on backend & frontend development, coaching and a bit of devops.
-            I am huge automation fan as it helps optimize processes and avoid repetitive work.
-            My hobbies are traveling, home automation and tinkering with IoT hardware.
+  profileMode:
+    enabled: true
+    # title: PaperMod
+    imageUrl: "/images/maxim2.jpg"
+    imageTitle: Maxim Kurbatov
+    imageWidth: 280
+    imageHeight: 280
+    linkedIn: "https://www.linkedin.com/in/maxim-kurbatov/"
+    contactMe:
+      - name: Email
+        link: mailto:maxim@kurb.me
+        caption: maxim@kurb.me
+      - name: LinkedIn
+        link: "https://www.linkedin.com/in/maxim-kurbatov/"
+        caption: "in/maxim-kurbatov"
+      - name: Telegram
+        link: "https://t.me/maksimkurb"
+        caption: "@maksimkurb"
+    buttons:
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+    Title: >
+      # Hello, I'm Maxim.
+      
+      <div style="font-weight: normal">Senior Java Engineer</div>
+    Content: >
+      I work as a Lead Backend Developer at [OneCell](https://www.onecell.ai/en), digital pathology platform driven by AI.
+      My background is diverse and I have [experience](/experience) in various fields related to digital technology.
+      I have worked on backend & frontend development, coaching and a bit of devops.
+      I am huge automation fan as it helps optimize processes and avoid repetitive work.
+      My hobbies are traveling, home automation and tinkering with IoT hardware.
 
-    socialIcons:
-        - name: github
-          url: "https://github.com/maksimkurb"
-        - name: linkedin
-          url: "https://www.linkedin.com/in/maxim-kurbatov/"
-        - name: instagram
-          url: "https://instagram.com/kurb.me"
-        - name: telegram
-          url: "https://t.me/maksimkurb"
-        - name: email
-          url: "mailto:maxim@kurb.me"
+  socialIcons:
+    - name: github
+      url: "https://github.com/maksimkurb"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/maxim-kurbatov/"
+    - name: instagram
+      url: "https://instagram.com/kurb.me"
+    - name: telegram
+      url: "https://t.me/maksimkurb"
+    - name: email
+      url: "mailto:maxim@kurb.me"
 
-    label:
-        text: >
-          <span class="title-primary">Maxim</span><span class="space"> </span><span class="title-secondary">Kurbatov</span>
-    #     icon: icon.png
-    #     iconHeight: 35
+  label:
+      text: >
+        <span class="title-primary">Maxim</span><span class="space"> </span><span class="title-secondary">Kurbatov</span>
+  #   icon: icon.png
+  #   iconHeight: 35
 
-    # analytics:
-    #     google:
-    #         SiteVerificationTag: "XYZabc"
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
 
-    assets:
-        disableHLJS: true
-    #     favicon: "<link / abs url>"
-    #     favicon16x16: "<link / abs url>"
-    #     favicon32x32: "<link / abs url>"
-    #     apple_touch_icon: "<link / abs url>"
-    #     safari_pinned_tab: "<link / abs url>"
+  assets:
+    disableHLJS: true
+  #   favicon: "<link / abs url>"
+  #   favicon16x16: "<link / abs url>"
+  #   favicon32x32: "<link / abs url>"
+  #   apple_touch_icon: "<link / abs url>"
+  #   safari_pinned_tab: "<link / abs url>"
 
-    # cover:
-    #     hidden: true # hide everywhere but not in structured data
-    #     hiddenInList: true # hide on list pages and home
-    #     hiddenInSingle: true # hide on single page
+  # cover:
+  #   hidden: true # hide everywhere but not in structured data
+  #   hiddenInList: true # hide on list pages and home
+  #   hiddenInSingle: true # hide on single page
 
-    # fuseOpts:
-    #     isCaseSensitive: false
-    #     shouldSort: true
-    #     location: 0
-    #     distance: 1000
-    #     threshold: 0.4
-    #     minMatchCharLength: 0
-    #     keys: ["title", "permalink", "summary", "content"]
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content", "tags"]
 
 markup:
-    goldmark:
-        renderer:
-            unsafe: true
-    highlight:
-        noClasses: false
-        # anchorLineNos: true
-        # codeFences: true
-        # guessSyntax: true
-        # lineNos: true
-        # style: monokai
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
 
 privacy:
-    vimeo:
-        disabled: false
-        simple: true
+  vimeo:
+    disabled: false
+    simple: true
 
-    x:
-        disabled: false
-        enableDNT: true
-        simple: true
+  x:
+    disabled: false
+    enableDNT: true
+    simple: true
 
-    instagram:
-        disabled: false
-        simple: true
+  instagram:
+    disabled: false
+    simple: true
 
-    youtube:
-        disabled: false
-        privacyEnhanced: true
-
-services:
-    instagram:
-        disableInlineCSS: true
-    x:
-        disableInlineCSS: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true

@@ -1,0 +1,11 @@
+{{- $index := slice }}
+{{- range site.AllPages }}
+    {{- if and (or (and (eq .Kind "page") (not .Params.searchHidden)) (eq .Params.searchHidden false)) (ne .Layout `archives`) (ne .Layout `search`) }}
+    {{- $tags := slice }}
+    {{- range .GetTerms "tags" }}
+    {{- $tags = $tags | append .Name }}
+    {{- end }}
+    {{- $index = $index | append (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary "tags" $tags) }}
+    {{- end }}
+{{- end }}
+{{- $index | jsonify }}

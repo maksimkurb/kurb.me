@@ -1,6 +1,7 @@
 ---
 date: 2025-05-03T00:00:00+01:00
 title: "TeamSpeak Server"
+searchHidden: true
 ---
 
 ![TeamSpeak Server banner](./TeamSpeak-Server-Banner.png)

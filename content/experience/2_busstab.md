@@ -7,6 +7,7 @@ company: "Business Stability"
 # location: "Remote"
 duration: "Dec 2018 - Aug 2019"
 skills: ["Node.js", "React.js", "TypeScript", "React Native", "NestJS", "Redis", "GraphQL", "Jest", "PostgreSQL", "JavaScript"]
+searchHidden: true
 ---
 
 I built a system for checking individuals and legal entities for risk factors.
