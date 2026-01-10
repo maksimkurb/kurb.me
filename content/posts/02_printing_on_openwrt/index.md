@@ -20,7 +20,7 @@ OpenWRT Wiki [has a great article](https://openwrt.org/docs/guide-user/services/
 
 The guide also covers how to find a firmware for the printer and how to upload it using `hotplug.d`. My printer (HP LaserJet M1005) luckily doesn't need any firmware upload.
 
-> **Note**: While the M1005 doesn't require firmware upload to the printer's RAM (like the HP LaserJet 1020), it is a **host-based printer** that requires the proprietary HPLIP plugin on the computer to render pages before sending them to the printer. This is important for understanding why the raw p910nd approach failed initially.
+> **Note**: While the M1005 doesn't require firmware upload to the printer's RAM (like the HP LaserJet 1020), it is a **host-based printer** that requires the proprietary HP driver on the computer to render pages before sending them to the printer. This can be reason why the raw p910nd approach failed initially.
 
 
 ### Setting up p910nd daemon on the router
