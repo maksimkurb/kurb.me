@@ -27,9 +27,22 @@ body .header nav {
   border-top-right-radius: var(--radius);
 }
 
+body .main {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--gap));
+}
+
 .recent-posts {
   font-size: 42px;
   margin-bottom: 1rem;
+}
+
+.post-content figure.align-center img {
+  margin: 0 auto;
+}
+
+.post-content figure.border img {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
 }
 
 .post-entry, 
