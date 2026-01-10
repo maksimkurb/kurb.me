@@ -40,6 +40,11 @@ body .main {
   margin: 0 auto;
 }
 
+figure.inline-block {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
 .post-content figure.border img {
   border: 1px solid var(--border);
   border-radius: var(--radius);

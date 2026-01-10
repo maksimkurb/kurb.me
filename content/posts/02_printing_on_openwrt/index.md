@@ -1,8 +1,8 @@
 ---
-title: "Printing on OpenWRT"
+title: "Connecting your ancient USB printer to the OpenWRT"
 date: "2026-01-10"
 description: "How I connected my old HP LaserJet M1005 printer to OpenWRT 24.10"
-tags: ["openwrt", "p910nd", "cups", "printing"]
+tags: ["openwrt", "p910nd", "cups", "printing", "tutorial"]
 # ShowToc: false
 # ShowBreadCrumbs: false
 ---
